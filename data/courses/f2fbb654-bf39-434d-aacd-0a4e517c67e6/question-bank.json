@@ -1,0 +1,119 @@
+{
+  "questions": [
+    {
+      "q": "What is science?",
+      "a": "The study of the natural world.",
+      "level": "easy"
+    },
+    {
+      "q": "What do we do first in the scientific method?",
+      "a": "Ask a question.",
+      "level": "easy"
+    },
+    {
+      "q": "What is matter?",
+      "a": "Anything that has mass and takes up space.",
+      "level": "easy"
+    },
+    {
+      "q": "What shape does a solid have?",
+      "a": "A fixed shape.",
+      "level": "easy"
+    },
+    {
+      "q": "What does a liquid do?",
+      "a": "Flows and takes the shape of its container.",
+      "level": "easy"
+    },
+    {
+      "q": "Can you name a type of gas?",
+      "a": "Air.",
+      "level": "easy"
+    },
+    {
+      "q": "What keeps us on the ground?",
+      "a": "Gravity.",
+      "level": "easy"
+    },
+    {
+      "q": "What makes things move?",
+      "a": "Energy.",
+      "level": "easy"
+    },
+    {
+      "q": "What do plants use to make food?",
+      "a": "Sunlight.",
+      "level": "easy"
+    },
+    {
+      "q": "What do we call the system that helps us breathe?",
+      "a": "Respiratory system.",
+      "level": "medium"
+    },
+    {
+      "q": "What happens to ice when it's heated?",
+      "a": "It melts into water.",
+      "level": "medium"
+    },
+    {
+      "q": "What form of energy do we see as light?",
+      "a": "Light energy.",
+      "level": "medium"
+    },
+    {
+      "q": "What is photosynthesis?",
+      "a": "How plants make food using sunlight.",
+      "level": "medium"
+    },
+    {
+      "q": "How long does it take sunlight to reach Earth?",
+      "a": "8 minutes.",
+      "level": "medium"
+    },
+    {
+      "q": "Name one system in the human body.",
+      "a": "Circulatory system.",
+      "level": "medium"
+    },
+    {
+      "q": "What is friction?",
+      "a": "A force that slows things down.",
+      "level": "medium"
+    },
+    {
+      "q": "What happens in the water cycle?",
+      "a": "Water evaporates, forms clouds, and rains.",
+      "level": "medium"
+    },
+    {
+      "q": "What happens to water when it gets hot?",
+      "a": "It turns to steam.",
+      "level": "hard"
+    },
+    {
+      "q": "What units measure temperature?",
+      "a": "Degrees.",
+      "level": "hard"
+    },
+    {
+      "q": "What is an ecosystem?",
+      "a": "A community of plants and animals working together.",
+      "level": "hard"
+    },
+    {
+      "q": "What is the role of the heart?",
+      "a": "It pumps blood.",
+      "level": "hard"
+    },
+    {
+      "q": "What does mechanical energy involve?",
+      "a": "Movement.",
+      "level": "hard"
+    },
+    {
+      "q": "What are the three states of matter?",
+      "a": "Solid, liquid, gas.",
+      "level": "hard"
+    }
+  ]
+}

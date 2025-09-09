@@ -1,0 +1,109 @@
+{
+  "questions": [
+    {
+      "q": "What is a noun?",
+      "a": "A naming word.",
+      "level": "easy"
+    },
+    {
+      "q": "Give an example of a noun.",
+      "a": "Dog.",
+      "level": "easy"
+    },
+    {
+      "q": "What is a verb?",
+      "a": "An action word.",
+      "level": "easy"
+    },
+    {
+      "q": "Give an example of a verb.",
+      "a": "Run.",
+      "level": "easy"
+    },
+    {
+      "q": "What does an adjective do?",
+      "a": "Describes a noun.",
+      "level": "easy"
+    },
+    {
+      "q": "Give an example of an adjective.",
+      "a": "Tall.",
+      "level": "easy"
+    },
+    {
+      "q": "What type of sentence tells something?",
+      "a": "Declarative.",
+      "level": "easy"
+    },
+    {
+      "q": "What type of sentence asks a question?",
+      "a": "Interrogative.",
+      "level": "easy"
+    },
+    {
+      "q": "What does a full stop do?",
+      "a": "Ends a sentence.",
+      "level": "easy"
+    },
+    {
+      "q": "What punctuation shows strong feeling?",
+      "a": "Exclamation mark.",
+      "level": "medium"
+    },
+    {
+      "q": "Change to present tense: He went to school.",
+      "a": "He goes to school.",
+      "level": "medium"
+    },
+    {
+      "q": "Change to past tense: They eat lunch.",
+      "a": "They ate lunch.",
+      "level": "medium"
+    },
+    {
+      "q": "Change to future tense: We watch a movie.",
+      "a": "We will watch a movie.",
+      "level": "medium"
+    },
+    {
+      "q": "Identify the type of this sentence: Close the door.",
+      "a": "Imperative.",
+      "level": "medium"
+    },
+    {
+      "q": "Identify the type of this sentence: Do you like ice cream?",
+      "a": "Interrogative.",
+      "level": "medium"
+    },
+    {
+      "q": "Which is a noun in this sentence: The cat is on the roof.",
+      "a": "Cat.",
+      "level": "medium"
+    },
+    {
+      "q": "Identify the verb in this sentence: She dances well.",
+      "a": "Dances.",
+      "level": "medium"
+    },
+    {
+      "q": "What is the adjective in: The old man walks slowly?",
+      "a": "Old.",
+      "level": "hard"
+    },
+    {
+      "q": "Add punctuation: Where is my book",
+      "a": "Where is my book?",
+      "level": "hard"
+    },
+    {
+      "q": "Add commas: I bought apples bananas and oranges.",
+      "a": "I bought apples, bananas, and oranges.",
+      "level": "hard"
+    },
+    {
+      "q": "Identify the type of this sentence: Wow! That’s amazing!",
+      "a": "Exclamatory.",
+      "level": "hard"
+    }
+  ]
+}

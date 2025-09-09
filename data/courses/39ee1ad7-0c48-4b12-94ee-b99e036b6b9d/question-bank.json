@@ -1,0 +1,119 @@
+{
+  "questions": [
+    {
+      "q": "What is science?",
+      "a": "Science is the study of the natural world.",
+      "level": "easy"
+    },
+    {
+      "q": "Why do we use the scientific method?",
+      "a": "To explore questions and find answers.",
+      "level": "easy"
+    },
+    {
+      "q": "What is matter?",
+      "a": "Anything that has mass and takes up space.",
+      "level": "easy"
+    },
+    {
+      "q": "Name a state of matter.",
+      "a": "Solid, liquid, or gas.",
+      "level": "easy"
+    },
+    {
+      "q": "What does ice turn into when heated?",
+      "a": "Water.",
+      "level": "easy"
+    },
+    {
+      "q": "What pulls objects down?",
+      "a": "Gravity.",
+      "level": "easy"
+    },
+    {
+      "q": "What do plants use to make food?",
+      "a": "Sunlight.",
+      "level": "easy"
+    },
+    {
+      "q": "What do we call the process of water turning into vapor?",
+      "a": "Evaporation.",
+      "level": "easy"
+    },
+    {
+      "q": "Which system helps us breathe?",
+      "a": "Respiratory system.",
+      "level": "medium"
+    },
+    {
+      "q": "What is photosynthesis?",
+      "a": "Plants making food using sunlight.",
+      "level": "medium"
+    },
+    {
+      "q": "What happens to water in the sun?",
+      "a": "It evaporates.",
+      "level": "medium"
+    },
+    {
+      "q": "How many states of matter are there?",
+      "a": "Three.",
+      "level": "medium"
+    },
+    {
+      "q": "What is friction?",
+      "a": "A force that slows things down.",
+      "level": "medium"
+    },
+    {
+      "q": "What makes a ball roll faster, smooth or rough surface?",
+      "a": "Smooth surface.",
+      "level": "medium"
+    },
+    {
+      "q": "What does the circulatory system do?",
+      "a": "Pumps blood.",
+      "level": "medium"
+    },
+    {
+      "q": "Name one ecosystem component.",
+      "a": "Plants or animals.",
+      "level": "medium"
+    },
+    {
+      "q": "How long does sunlight take to reach Earth?",
+      "a": "Eight minutes.",
+      "level": "hard"
+    },
+    {
+      "q": "What are the three main parts of the water cycle?",
+      "a": "Evaporation, condensation, precipitation.",
+      "level": "hard"
+    },
+    {
+      "q": "What is the difference between plant and animal cells?",
+      "a": "Plants make their own food; animals do not.",
+      "level": "hard"
+    },
+    {
+      "q": "What role does energy play in motion?",
+      "a": "Energy makes things move.",
+      "level": "hard"
+    },
+    {
+      "q": "What can we learn from experiments?",
+      "a": "We can test our guesses.",
+      "level": "hard"
+    },
+    {
+      "q": "Which system helps us digest food?",
+      "a": "Digestive system.",
+      "level": "hard"
+    },
+    {
+      "q": "What are two examples of forces?",
+      "a": "Gravity and friction.",
+      "level": "hard"
+    }
+  ]
+}

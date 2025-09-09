@@ -1,0 +1,109 @@
+{
+  "questions": [
+    {
+      "q": "What is science?",
+      "a": "The study of the natural world.",
+      "level": "easy"
+    },
+    {
+      "q": "What is a hypothesis?",
+      "a": "A guess about what will happen.",
+      "level": "easy"
+    },
+    {
+      "q": "What do we call anything that has mass?",
+      "a": "Matter.",
+      "level": "easy"
+    },
+    {
+      "q": "How many states of matter are there?",
+      "a": "Three.",
+      "level": "easy"
+    },
+    {
+      "q": "What is an example of a solid?",
+      "a": "Ice.",
+      "level": "easy"
+    },
+    {
+      "q": "What do liquids take the shape of?",
+      "a": "Their container.",
+      "level": "easy"
+    },
+    {
+      "q": "What pulls objects down to the ground?",
+      "a": "Gravity.",
+      "level": "easy"
+    },
+    {
+      "q": "What do plants use to make food?",
+      "a": "Sunlight.",
+      "level": "easy"
+    },
+    {
+      "q": "What system helps us breathe?",
+      "a": "Respiratory system.",
+      "level": "medium"
+    },
+    {
+      "q": "Name one type of energy.",
+      "a": "Heat.",
+      "level": "medium"
+    },
+    {
+      "q": "What happens when ice is left in the sun?",
+      "a": "It melts into water.",
+      "level": "medium"
+    },
+    {
+      "q": "What does friction do?",
+      "a": "Slows things down.",
+      "level": "medium"
+    },
+    {
+      "q": "How does water cycle start?",
+      "a": "Water evaporates.",
+      "level": "medium"
+    },
+    {
+      "q": "What orbits the Earth?",
+      "a": "The Moon.",
+      "level": "medium"
+    },
+    {
+      "q": "What is the purpose of experiments?",
+      "a": "To test a hypothesis.",
+      "level": "medium"
+    },
+    {
+      "q": "What is a gas?",
+      "a": "Matter that spreads everywhere.",
+      "level": "hard"
+    },
+    {
+      "q": "What happens to water when it gets heated?",
+      "a": "It turns into steam.",
+      "level": "hard"
+    },
+    {
+      "q": "How long does sunlight take to reach Earth?",
+      "a": "Eight minutes.",
+      "level": "hard"
+    },
+    {
+      "q": "What is the circulatory system responsible for?",
+      "a": "Pumping blood.",
+      "level": "hard"
+    },
+    {
+      "q": "What is photosynthesis?",
+      "a": "Plants making food with sunlight.",
+      "level": "hard"
+    },
+    {
+      "q": "What is an ecosystem?",
+      "a": "A community of plants and animals.",
+      "level": "hard"
+    }
+  ]
+}

@@ -1,0 +1,842 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Voice Tutor - PrathamLearn</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		
+		body { 
+			font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+			background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+			min-height: 100vh;
+			padding: 20px;
+		}
+		
+		.container { 
+			max-width: 1200px; 
+			margin: 0 auto;
+			padding: 20px;
+		}
+		
+		.header {
+			background: white;
+			border-radius: 16px;
+			padding: 30px;
+			margin-bottom: 30px;
+			box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+		
+		.header h2 {
+			font-size: 2rem;
+			font-weight: 700;
+			color: #2c3e50;
+			margin: 0;
+		}
+		
+		.back-btn {
+			display: inline-flex;
+			align-items: center;
+			padding: 10px 20px;
+			background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+			color: white;
+			text-decoration: none;
+			border-radius: 8px;
+			font-weight: 500;
+			transition: all 0.3s ease;
+		}
+		
+		.back-btn:hover {
+			transform: translateY(-2px);
+			box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+		}
+		
+		.grid { 
+			display: grid; 
+			grid-template-columns: 1fr; 
+			gap: 20px; 
+		}
+		
+		@media (min-width: 980px) { 
+			.grid { 
+				grid-template-columns: 1fr 1fr; 
+			} 
+		}
+		
+		.card { 
+			background: white;
+			border-radius: 16px; 
+			padding: 30px; 
+			box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+			border: 1px solid rgba(255, 255, 255, 0.2);
+			position: relative;
+			overflow: hidden;
+		}
+		
+		.card::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			height: 4px;
+			background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+		}
+		
+		.card h3 {
+			font-size: 1.4rem;
+			font-weight: 600;
+			color: #2c3e50;
+			margin-bottom: 20px;
+			display: flex;
+			align-items: center;
+			gap: 10px;
+		}
+		
+		button { 
+			padding: 12px 20px; 
+			margin: 8px 8px 8px 0;
+			border: none;
+			border-radius: 8px;
+			font-size: 1rem;
+			font-weight: 500;
+			cursor: pointer;
+			transition: all 0.3s ease;
+		}
+		
+		button:disabled {
+			opacity: 0.6;
+			cursor: not-allowed;
+			transform: none;
+		}
+		
+		.connect-btn {
+			background: linear-gradient(135deg, #4caf50 0%, #45a049 100%);
+			color: white;
+		}
+		
+		.connect-btn:hover:not(:disabled) {
+			transform: translateY(-2px);
+			box-shadow: 0 8px 20px rgba(76, 175, 80, 0.3);
+		}
+		
+		.disconnect-btn {
+			background: linear-gradient(135deg, #f44336 0%, #d32f2f 100%);
+			color: white;
+		}
+		
+		.disconnect-btn:hover:not(:disabled) {
+			transform: translateY(-2px);
+			box-shadow: 0 8px 20px rgba(244, 67, 54, 0.3);
+		}
+		
+		.mute-btn {
+			background: linear-gradient(135deg, #ff9800 0%, #f57c00 100%);
+			color: white;
+		}
+		
+		.mute-btn:hover:not(:disabled) {
+			transform: translateY(-2px);
+			box-shadow: 0 8px 20px rgba(255, 152, 0, 0.3);
+		}
+		
+		.submit-btn {
+			background: linear-gradient(135deg, #2196f3 0%, #1976d2 100%);
+			color: white;
+		}
+		
+		.submit-btn:hover:not(:disabled) {
+			transform: translateY(-2px);
+			box-shadow: 0 8px 20px rgba(33, 150, 243, 0.3);
+		}
+		
+		.finish-btn {
+			background: linear-gradient(135deg, #9c27b0 0%, #7b1fa2 100%);
+			color: white;
+		}
+		
+		.finish-btn:hover:not(:disabled) {
+			transform: translateY(-2px);
+			box-shadow: 0 8px 20px rgba(156, 39, 176, 0.3);
+		}
+		
+		#logs { 
+			font-family: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace;
+			white-space: pre-wrap; 
+			background: #f8f9fa; 
+			border: 2px solid #e9ecef; 
+			border-radius: 12px; 
+			padding: 20px; 
+			height: 200px; 
+			overflow: auto;
+			font-size: 0.9rem;
+			line-height: 1.4;
+		}
+		
+		#plan { 
+			white-space: pre-wrap; 
+			border: 2px dashed #dee2e6; 
+			border-radius: 12px; 
+			padding: 20px; 
+			background: linear-gradient(135deg, #fff3e0 0%, #fce4ec 100%);
+			font-size: 0.95rem;
+			line-height: 1.6;
+		}
+		
+		table { 
+			width: 100%; 
+			border-collapse: collapse; 
+			background: white;
+			border-radius: 12px;
+			overflow: hidden;
+			box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+		}
+		
+		th, td { 
+			border-bottom: 1px solid #e9ecef; 
+			padding: 12px 16px; 
+			text-align: left; 
+			vertical-align: top; 
+		}
+		
+		th {
+			background: #f8f9fa;
+			font-weight: 600;
+			color: #495057;
+		}
+		
+		.badge { 
+			display: inline-block; 
+			padding: 4px 12px; 
+			border-radius: 20px; 
+			font-size: 0.8rem;
+			font-weight: 500;
+		}
+		
+		.badge.ok { 
+			background: #d4edda; 
+			color: #155724; 
+		}
+		
+		.badge.fail { 
+			background: #f8d7da; 
+			color: #721c24; 
+		}
+		
+		.badge.pending { 
+			background: #fff3cd; 
+			color: #856404; 
+		}
+		
+		.row { 
+			display: flex; 
+			gap: 12px; 
+			margin-top: 12px; 
+		}
+		
+		.row input { 
+			flex: 1; 
+			padding: 12px 16px; 
+			border: 2px solid #e1e8ed; 
+			border-radius: 8px;
+			font-size: 1rem;
+			transition: all 0.3s ease;
+		}
+		
+		.row input:focus {
+			outline: none;
+			border-color: #667eea;
+			box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+		}
+		
+		.qa-row { 
+			transition: all 0.3s ease; 
+		}
+		
+		.qa-row.active { 
+			background-color: #fff3cd; 
+			transform: scale(1.02);
+		}
+		
+		.loading { 
+			color: #6c757d; 
+			font-style: italic; 
+		}
+		
+		.score-display {
+			font-size: 1.3rem;
+			font-weight: 700;
+			color: #2c3e50;
+			margin-bottom: 10px;
+		}
+		
+		.level-display {
+			font-size: 1.1rem;
+			color: #495057;
+			margin-bottom: 20px;
+		}
+		
+		.questions-count {
+			font-size: 1rem;
+			font-weight: 600;
+			color: #495057;
+			margin-bottom: 15px;
+			padding: 8px 16px;
+			background: #e3f2fd;
+			border-radius: 8px;
+			display: inline-block;
+		}
+		
+		.hint {
+			font-size: 0.9rem;
+			color: #6c757d;
+			margin-top: 8px;
+			font-style: italic;
+		}
+		
+		@media (max-width: 768px) {
+			.container {
+				padding: 10px;
+			}
+			
+			.header {
+				flex-direction: column;
+				gap: 20px;
+				text-align: center;
+			}
+			
+			.card {
+				padding: 20px;
+			}
+			
+			.row {
+				flex-direction: column;
+			}
+			
+			table {
+				font-size: 0.9rem;
+			}
+			
+			th, td {
+				padding: 8px 12px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<h2>🎤 Voice Tutor</h2>
+			<a href="/learner.html" class="back-btn">← Back to Learner</a>
+		</div>
+
+		<div class="grid">
+			<div class="card">
+				<h3>🎙️ Live Voice Interaction</h3>
+				<button id="connect" class="connect-btn">🔗 Connect</button>
+				<button id="disconnect" disabled class="disconnect-btn">🔌 Disconnect</button>
+				<button id="mute" disabled class="mute-btn">🔇 Mute</button>
+				<div class="hint">Answer succinctly. If voice doesn't capture, type your answer below.</div>
+				<div class="row">
+					<input id="manualAns" placeholder="Type your answer..." />
+					<button id="submitAns" class="submit-btn">📤 Submit</button>
+				</div>
+				<audio id="remote" autoplay></audio>
+				<div id="logs"></div>
+			</div>
+
+			<div class="card">
+				<h3>📋 Q&A Assessment</h3>
+				<div id="totalQuestions" class="questions-count">Loading questions...</div>
+				<table>
+					<thead>
+						<tr>
+							<th style="width:45%">📝 Question</th>
+							<th style="width:35%">💭 Your Answer</th>
+							<th style="width:20%">✅ Result</th>
+						</tr>
+					</thead>
+					<tbody id="qaBody"></tbody>
+				</table>
+			</div>
+		</div>
+
+		<div class="card">
+			<h3>📊 Results & Study Plan</h3>
+			<div id="scoreLine" class="score-display">Score: 0/0</div>
+			<div id="levelLine" class="level-display">Level: -</div>
+			<button id="finish" class="finish-btn">🏁 Finish Assessment & Create Study Plan</button>
+			<h4>📚 Study Plan</h4>
+			<div id="plan">Plan will appear here once generated.</div>
+		</div>
+	</div>
+
+	<script>
+	const params = new URLSearchParams(location.search);
+	const courseId = params.get('courseId');
+	const learnerName = decodeURIComponent(params.get('name') || 'Learner');
+	const preferredLang = (params.get('lang') || 'en');
+
+	let pc, dc, micStream;
+	let isMuted = false;
+	let lastTextBuffer = '';
+	let sessionId = '';
+	let currentQuestionIndex = 0;
+	let lastSubmittedAnswer = '';
+	let lastSubmitAt = 0;
+	const SUBMIT_COOLDOWN_MS = 2000;
+	let baselineQuestions = 0;
+	let answeredCount = 0;
+	let qaList = [];
+	let questionBank = [];
+	let currentlyAskedQuestion = '';
+	let waitingForAnswer = false;
+	let fullTranscript = '';
+	let analysisStarted = false;
+	const remoteAudio = document.getElementById('remote');
+	const logs = document.getElementById('logs');
+	const planBox = document.getElementById('plan');
+	const qaBody = document.getElementById('qaBody');
+	const scoreLine = document.getElementById('scoreLine');
+	const levelLine = document.getElementById('levelLine');
+	const manualAns = document.getElementById('manualAns');
+	const submitAns = document.getElementById('submitAns');
+	const totalQuestions = document.getElementById('totalQuestions');
+
+	function log(...args) { logs.textContent += '\n' + args.join(' '); logs.scrollTop = logs.scrollHeight; }
+
+	function findPlanInLoose(text) {
+		const loose = text.replace(/\s+/g, '');
+		return loose.includes('<<PLAN_START>>') && loose.includes('<<PLAN_END>>');
+	}
+
+	function extractPlanFrom(text) {
+		if (findPlanInLoose(text)) {
+			const full = lastTextBuffer;
+			const startIdx = full.indexOf('<<');
+			const endIdx = full.lastIndexOf('>>');
+			if (startIdx !== -1 && endIdx !== -1 && endIdx > startIdx) {
+				const between = full.substring(startIdx + 2, endIdx - 1).replace(/PLAN\s*_START|PLAN\s*_END/gi, '').trim();
+				if (between) { planBox.textContent = between; return true; }
+			}
+		}
+		return false;
+	}
+
+	function detectQuestion(text) {
+		if (!text) return '';
+		
+		// Clean the text and get the last few words
+		const cleanText = text.replace(/\n+/g, ' ').replace(/\s+/g, ' ').trim();
+		const words = cleanText.split(' ');
+		const last20Words = words.slice(-20).join(' ').toLowerCase();
+		
+		// Check if it contains a question mark
+		if (!last20Words.includes('?')) return '';
+		
+		// Extract the question part
+		const questionMatch = last20Words.match(/([^.!]*\?)/);
+		if (!questionMatch) return '';
+		
+		const spokenQuestion = questionMatch[1].trim();
+		console.log('Detected question fragment:', spokenQuestion);
+		
+		// Try to match against our question bank
+		for (let i = 0; i < qaList.length; i++) {
+			const q = qaList[i].q;
+			const qLower = q.toLowerCase();
+			
+			// Check various matching strategies
+			if (qLower.includes(spokenQuestion) || 
+			    spokenQuestion.includes(qLower.substring(0, 20)) ||
+			    (spokenQuestion.includes('what') && qLower.includes('what') && 
+			     spokenQuestion.includes(qLower.split(' ').slice(-2).join(' ')))) {
+				currentQuestionIndex = i;
+				console.log('Matched to question index:', i, q);
+				return q;
+			}
+		}
+		
+		// If no match found, log it
+		console.log('No match found for question:', spokenQuestion);
+		return spokenQuestion;
+	}
+
+	function tryExtractAnswer(text) {
+		const m = text.match(/^(?:User|Learner|You said)[:\-]\s*(.+)$/im);
+		if (m) return m[1].trim();
+		const lines = text.split(/\n+/).map(s => s.trim()).filter(Boolean);
+		const cand = lines.find(s => s && !s.endsWith('?') && s.length > 1 && s.length <= 200 && !/^Correct|Incorrect|Okay|Alright/i.test(s));
+		return cand || '';
+	}
+
+	function renderQA() {
+		qaBody.innerHTML = qaList.map((item, idx) => {
+			const badge = item.correct === null ? '<span class="badge pending">Pending</span>' : 
+			              (item.correct ? '<span class="badge ok">Correct</span>' : '<span class="badge fail">Incorrect</span>');
+			const rowClass = idx === currentQuestionIndex ? 'qa-row active' : 'qa-row';
+			return `<tr class="${rowClass}"><td>${escapeHtml(item.q || '')}</td><td>${escapeHtml(item.a || '-')}<div style="color:#666;font-size:12px;margin-top:4px;">${escapeHtml(item.feedback || '')}</div></td><td>${badge}</td></tr>`;
+		}).join('');
+	}
+
+	function escapeHtml(s) { return String(s||'').replace(/[&<>]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;'}[c])); }
+
+	function updateScore(score, total) {
+		scoreLine.textContent = `Score: ${score}/${total}`;
+		const pct = total ? Math.round((score/total)*100) : 0;
+		const level = pct >= 80 ? 'Advanced' : pct >= 50 ? 'Intermediate' : 'Beginner';
+		levelLine.textContent = `Level: ${level} (${pct}%)`;
+	}
+
+	// Load questions immediately on page load
+	async function loadQuestionsDirectly() {
+		try {
+			// First get a list of courses to find the question bank
+			const coursesRes = await fetch('/api/courses');
+			const courses = await coursesRes.json();
+			const course = courses.find(c => c.id === courseId);
+			
+			if (course && course.prompt) {
+				// Try to get question bank from the prompt endpoint
+				const promptRes = await fetch(`/api/admin/prompt/${courseId}`);
+				if (promptRes.ok) {
+					// The course has been set up, load from question bank file
+					const qbPath = `/data/courses/${courseId}/question-bank.json`;
+					try {
+						const qbRes = await fetch(qbPath);
+						if (qbRes.ok) {
+							const qb = await qbRes.json();
+							if (qb.questions && qb.questions.length > 0) {
+								questionBank = qb.questions;
+								// Don't show questions yet - wait for baselineQuestions from ephemeral token
+								totalQuestions.textContent = `Questions will be loaded after connection...`;
+								return;
+							}
+						}
+					} catch (e) {
+						console.log('Could not load question bank directly:', e);
+					}
+				}
+			}
+			
+			totalQuestions.textContent = 'Questions will load after connecting...';
+		} catch (e) {
+			console.error('Failed to load questions:', e);
+			totalQuestions.textContent = 'Questions will load after connecting...';
+		}
+	}
+
+	async function createSession() {
+		const res = await fetch('/api/learner/session', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ courseId, learnerName }) });
+		const data = await res.json();
+		if (res.ok) { 
+			sessionId = data.sessionId; 
+			log('Session:', sessionId);
+			// Load question bank from session if not already loaded
+			if (questionBank.length === 0) {
+				loadQuestionBank();
+			}
+		}
+	}
+
+	async function loadQuestionBank() {
+		if (!sessionId) return;
+		try {
+			const res = await fetch(`/api/learner/session/${encodeURIComponent(sessionId)}`);
+			const data = await res.json();
+			if (res.ok && data.questionBank && data.questionBank.length > 0) {
+				questionBank = data.questionBank;
+				// Don't show questions yet - wait for baselineQuestions from ephemeral token
+				totalQuestions.textContent = `Questions will be loaded after connection...`;
+			}
+		} catch (e) {
+			console.error('Failed to load questions from session:', e);
+		}
+	}
+
+	async function analyzeTranscript() {
+		if (!sessionId || !fullTranscript) return;
+		
+		log('Analyzing conversation transcript...');
+		
+		try {
+			// Send transcript for analysis
+			const res = await fetch('/api/analyze-transcript', {
+				method: 'POST',
+				headers: { 'Content-Type': 'application/json' },
+				body: JSON.stringify({ sessionId, transcript: fullTranscript })
+			});
+			
+			const data = await res.json();
+			if (res.ok) {
+				// Update UI with analyzed Q&A pairs
+				qaList = [];
+				data.qa_pairs.forEach(qa => {
+					qaList.push({
+						q: qa.question,
+						a: qa.user_answer,
+						correct: qa.correct,
+						feedback: qa.feedback
+					});
+				});
+				
+				renderQA();
+				updateScore(data.score, data.total);
+				
+				log(`Analysis complete: ${data.score}/${data.total} correct`);
+				
+				// Generate study plan
+				const planRes = await fetch('/api/studyplan', {
+					method: 'POST',
+					headers: { 'Content-Type': 'application/json' },
+					body: JSON.stringify({ sessionId })
+				});
+				
+				const planData = await planRes.json();
+				if (planRes.ok) {
+					planBox.textContent = planData.plan || 'Plan generated.';
+				}
+			} else {
+				log('Failed to analyze transcript:', data.error);
+			}
+		} catch (e) {
+			console.error('Failed to analyze transcript:', e);
+			log('Error analyzing transcript');
+		}
+	}
+
+	async function analyzeTranscriptOnce() {
+		if (analysisStarted) return;
+		analysisStarted = true;
+		await analyzeTranscript();
+	}
+
+
+	async function createEphemeralToken() {
+		const res = await fetch(`/api/voice/ephemeral?courseId=${encodeURIComponent(courseId)}&name=${encodeURIComponent(learnerName)}&lang=${encodeURIComponent(preferredLang)}`, { method: 'POST' });
+		if (!res.ok) { const txt = await res.text(); throw new Error(`Failed to get ephemeral token (${res.status}): ${txt}`); }
+		const data = await res.json();
+		const token = data?.client_secret?.value || data?.client_secret || data?.value;
+		if (!token) throw new Error('No ephemeral token in response');
+		baselineQuestions = Number(data?.baselineQuestions || 0);
+		
+		// Update qaList to only show questions that will be asked
+		if (baselineQuestions > 0 && questionBank.length > 0) {
+			const questionsToShow = questionBank.slice(0, baselineQuestions);
+			qaList = questionsToShow.map(q => ({ q: q.q, a: '', correct: null, feedback: '' }));
+			totalQuestions.textContent = `Questions: ${questionsToShow.length} of ${questionBank.length}`;
+			renderQA();
+		}
+		
+		return { token, model: data?.model || 'gpt-4o-realtime-preview-2024-12-17' };
+	}
+
+	async function connect() {
+		try {
+			document.getElementById('connect').disabled = true;
+			await createSession();
+			({ token, model } = await createEphemeralToken());
+			pc = new RTCPeerConnection();
+			pc.onconnectionstatechange = () => log('pc state:', pc.connectionState);
+			pc.oniceconnectionstatechange = () => log('ice state:', pc.iceConnectionState);
+			pc.ontrack = (e) => { const [stream] = e.streams; remoteAudio.srcObject = stream; };
+
+			dc = pc.createDataChannel('oai-events');
+			dc.onopen = () => {
+				log('data channel open');
+				const langInstr = preferredLang === 'hi' ? 'Use only Hindi.' : 'Use only English.';
+				const startEvent = { type: 'response.create', response: { modalities: ['audio','text'], instructions: `${langInstr} Start assessment now. Ask the first science question from the question bank immediately. Use ONLY the questions provided in the question bank. No other questions. CRITICAL: Wait for the user to finish speaking completely before responding. Do not interrupt the user.` } };
+				dc.send(JSON.stringify(startEvent));
+			};
+			dc.onmessage = (e) => {
+				const raw = e.data;
+				try {
+					const event = JSON.parse(String(raw));
+					
+					// Log all events for debugging
+					if (event.type) {
+						console.log('Realtime event:', event.type, event);
+					}
+					
+					// Handle different event types according to OpenAI Realtime API
+					if (event.type === 'conversation.item.created') {
+						const item = event.item;
+						if (item && item.role === 'user' && item.content) {
+							// User's speech was transcribed
+							const userText = item.content.find(c => c.type === 'input_text')?.text || 
+							                item.content.find(c => c.type === 'input_audio')?.transcript || '';
+							if (userText) {
+								log('User said:', userText);
+								fullTranscript += '\nUser: ' + userText;
+								// Don't submit answers in real-time
+							}
+						}
+					} else if (event.type === 'conversation.item.input_audio_transcription.completed') {
+						// User's audio was transcribed
+						const transcript = event.transcript || '';
+						if (transcript) {
+							log('User said (transcribed):', transcript);
+							// Add a clear separator in the transcript
+							fullTranscript += '\n\n[USER ANSWER]: ' + transcript + '\n\n';
+						}
+					} else if (event.type === 'input_audio_buffer.committed') {
+						// Audio buffer was committed
+						console.log('Audio buffer committed');
+					} else if (event.type === 'conversation.item.content') {
+						// Check for user content in conversation items
+						if (event.item && event.item.role === 'user') {
+							console.log('User content event:', event);
+						}
+					} else if (event.type === 'response.audio_transcript.delta') {
+						// Assistant's speech transcription
+						const delta = event.delta || '';
+						if (delta) {
+							log('Assistant:', delta.slice(0, 50));
+							fullTranscript += delta;
+							lastTextBuffer += delta;
+							
+							// Check if we just completed a question
+							if (delta.includes('?')) {
+								fullTranscript += '\n';
+							}
+						}
+					} else if (event.type === 'response.text.delta') {
+						// Assistant's text response
+						const delta = event.delta || '';
+						if (delta) {
+							log('Text:', delta.slice(0, 50));
+							lastTextBuffer += delta;
+						}
+					} else if (event.type === 'input_audio_buffer.speech_started') {
+						log('User started speaking...');
+					} else if (event.type === 'input_audio_buffer.speech_stopped') {
+						log('User stopped speaking');
+						// Add a longer delay to ensure transcription is complete and agent waits
+						setTimeout(() => {
+							console.log('User speech processing complete - agent should wait before responding');
+						}, 2000);
+					}
+					
+					// Check for assessment completion
+					if (lastTextBuffer.toLowerCase().includes('assessment complete') || 
+					    extractPlanFrom(lastTextBuffer)) {
+						setTimeout(async () => {
+							try { disconnect(); } catch {}
+							await analyzeTranscriptOnce();
+						}, 500);
+					}
+				} catch (err) {
+					console.error('Failed to parse realtime event:', err);
+					// Fallback to simple text logging
+					const textChunk = String(raw || '');
+					if (textChunk && textChunk.length < 200) {
+						log('raw:', textChunk);
+					}
+				}
+			};
+
+			micStream = await navigator.mediaDevices.getUserMedia({ audio: true });
+			micStream.getTracks().forEach(track => pc.addTrack(track, micStream));
+
+			const offer = await pc.createOffer({ offerToReceiveAudio: true });
+			await pc.setLocalDescription(offer);
+
+			const baseUrl = 'https://api.openai.com/v1/realtime';
+			const resp = await fetch(`${baseUrl}?model=${encodeURIComponent(model)}`, {
+				method: 'POST',
+				headers: {
+					'Authorization': `Bearer ${token}`,
+					'Content-Type': 'application/sdp',
+					'Accept': 'application/sdp'
+				},
+				body: offer.sdp
+			});
+			const answer = await resp.text();
+			// Avoid polluting transcript with SDP answer
+			lastTextBuffer += '\n' + (answer || '');
+			if (answer.toLowerCase().includes('assessment complete') || 
+			    extractPlanFrom(answer) || extractPlanFrom(lastTextBuffer)) {
+				setTimeout(async () => {
+					try { disconnect(); } catch {}
+					await analyzeTranscriptOnce();
+				}, 500);
+			}
+			await pc.setRemoteDescription({ type: 'answer', sdp: answer });
+
+			document.getElementById('disconnect').disabled = false;
+			document.getElementById('mute').disabled = false;
+			log('Connected. Speak to the tutor.');
+		} catch (err) {
+			log('Error:', err.message);
+			document.getElementById('connect').disabled = false;
+		}
+	}
+
+	function disconnect() {
+		try {
+			document.getElementById('disconnect').disabled = true;
+			if (dc) { try { dc.close(); } catch {} }
+			if (pc) { pc.getSenders().forEach(s => { try { s.track.stop(); } catch {} }); pc.close(); }
+			if (micStream) { micStream.getTracks().forEach(t => t.stop()); }
+			document.getElementById('connect').disabled = false;
+			log('Disconnected');
+		} catch {}
+	}
+
+	// Event handlers
+	document.getElementById('connect').onclick = connect;
+	document.getElementById('disconnect').onclick = async () => {
+		disconnect();
+		await analyzeTranscriptOnce();
+	};
+	document.getElementById('mute').onclick = () => { if (!micStream) return; isMuted = !isMuted; micStream.getAudioTracks().forEach(t => t.enabled = !isMuted); log(isMuted ? 'Muted' : 'Unmuted'); };
+	document.getElementById('submitAns').onclick = async () => { 
+		const v = manualAns.value.trim(); 
+		if (!v) return; 
+		// Add manual answer to transcript
+		fullTranscript += '\nUser: ' + v;
+		log('Manual answer added:', v);
+		manualAns.value=''; 
+	};
+	document.getElementById('finish').onclick = async () => { 
+		if (!sessionId) return; 
+		try { 
+			disconnect(); 
+		} catch {} 
+		await analyzeTranscriptOnce(); 
+	};
+
+	// Poll session periodically to sync updates
+	setInterval(async () => { 
+		if (!sessionId) return; 
+		try { 
+			const res = await fetch(`/api/learner/session/${encodeURIComponent(sessionId)}`); 
+			const s = await res.json(); 
+			if (res.ok && Array.isArray(s.history)) { 
+				// Update scores and answers from backend
+				s.history.forEach((h, idx) => {
+					if (qaList[idx]) {
+						qaList[idx].a = h.a || qaList[idx].a;
+						qaList[idx].correct = h.correct;
+						qaList[idx].feedback = h.feedback || '';
+					}
+				});
+				renderQA(); 
+				updateScore(s.score || 0, s.total || 0); 
+			} 
+		} catch {} 
+	}, 2000);
+
+	// Load questions on page load
+	loadQuestionsDirectly();
+	</script>
+</body>
+</html>

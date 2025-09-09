@@ -1,0 +1,674 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Learner - PrathamLearn</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		
+		body { 
+			font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+			background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+			min-height: 100vh;
+			padding: 20px;
+		}
+		
+		.container { 
+			max-width: 1000px; 
+			margin: 0 auto;
+			padding: 20px;
+		}
+		
+		.header {
+			background: white;
+			border-radius: 16px;
+			padding: 30px;
+			margin-bottom: 30px;
+			box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+		
+		.header h2 {
+			font-size: 2rem;
+			font-weight: 700;
+			color: #2c3e50;
+			margin: 0;
+		}
+		
+		.back-btn {
+			display: inline-flex;
+			align-items: center;
+			padding: 10px 20px;
+			background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+			color: white;
+			text-decoration: none;
+			border-radius: 8px;
+			font-weight: 500;
+			transition: all 0.3s ease;
+		}
+		
+		.back-btn:hover {
+			transform: translateY(-2px);
+			box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+		}
+		
+		.card { 
+			background: white;
+			border-radius: 16px; 
+			padding: 30px; 
+			margin: 20px 0; 
+			box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+			border: 1px solid rgba(255, 255, 255, 0.2);
+			position: relative;
+			overflow: hidden;
+		}
+		
+		.card::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			height: 4px;
+			background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+		}
+		
+		.card h3 {
+			font-size: 1.4rem;
+			font-weight: 600;
+			color: #2c3e50;
+			margin-bottom: 20px;
+			display: flex;
+			align-items: center;
+			gap: 10px;
+		}
+		
+		.form-group {
+			margin-bottom: 20px;
+		}
+		
+		label {
+			display: block;
+			font-weight: 500;
+			color: #34495e;
+			margin-bottom: 8px;
+			font-size: 0.95rem;
+		}
+		
+		input, select, textarea {
+			width: 100%;
+			max-width: 400px;
+			padding: 12px 16px;
+			border: 2px solid #e1e8ed;
+			border-radius: 8px;
+			font-size: 1rem;
+			transition: all 0.3s ease;
+			background: white;
+		}
+		
+		input:focus, select:focus, textarea:focus {
+			outline: none;
+			border-color: #667eea;
+			box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+		}
+		
+		button {
+			background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+			color: white;
+			border: none;
+			padding: 12px 24px;
+			border-radius: 8px;
+			font-size: 1rem;
+			font-weight: 500;
+			cursor: pointer;
+			transition: all 0.3s ease;
+			margin: 8px 8px 8px 0;
+		}
+		
+		button:hover:not(:disabled) {
+			transform: translateY(-2px);
+			box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+		}
+		
+		button:disabled {
+			opacity: 0.6;
+			cursor: not-allowed;
+			transform: none;
+		}
+		
+		.voice-btn {
+			background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
+			color: #2c3e50;
+		}
+		
+		.voice-btn:hover:not(:disabled) {
+			box-shadow: 0 8px 20px rgba(255, 154, 158, 0.3);
+		}
+		
+		.assessment-btn {
+			background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+			color: #2c3e50;
+		}
+		
+		.assessment-btn:hover:not(:disabled) {
+			box-shadow: 0 8px 20px rgba(168, 237, 234, 0.3);
+		}
+		
+		pre { 
+			white-space: pre-wrap; 
+			background: #f8f9fa;
+			padding: 20px;
+			border-radius: 8px;
+			border: 1px solid #e9ecef;
+			font-family: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace;
+			font-size: 0.9rem;
+			line-height: 1.5;
+		}
+		
+		.hint {
+			font-size: 0.9rem;
+			color: #7f8c8d;
+			margin-top: 8px;
+			font-style: italic;
+		}
+		
+		.hidden {
+			display: none;
+		}
+		
+		.questions-list {
+			background: #f8f9fa;
+			padding: 20px;
+			border-radius: 8px;
+			margin: 15px 0;
+		}
+		
+		.questions-list ol {
+			margin-left: 20px;
+		}
+		
+		.questions-list li {
+			margin-bottom: 10px;
+			line-height: 1.5;
+		}
+		
+		.assessment-results {
+			background: linear-gradient(135deg, #e8f5e9 0%, #f1f8e9 100%);
+			padding: 20px;
+			border-radius: 8px;
+			margin: 15px 0;
+		}
+		
+		.score-display {
+			font-size: 1.2rem;
+			font-weight: 600;
+			color: #2e7d32;
+			margin-bottom: 10px;
+		}
+		
+		.level-display {
+			font-size: 1rem;
+			color: #388e3c;
+			margin-bottom: 15px;
+		}
+		
+		.qa-analysis {
+			background: white;
+			padding: 15px;
+			border-radius: 8px;
+			margin: 10px 0;
+			border-left: 4px solid #4caf50;
+		}
+		
+		.study-plan {
+			background: linear-gradient(135deg, #fff3e0 0%, #fce4ec 100%);
+			padding: 20px;
+			border-radius: 8px;
+			margin: 15px 0;
+			white-space: pre-wrap;
+			line-height: 1.6;
+		}
+		
+		.file-input-wrapper {
+			position: relative;
+			display: inline-block;
+			margin: 10px 0;
+		}
+		
+		.file-input-wrapper input[type="file"] {
+			position: absolute;
+			opacity: 0;
+			width: 100%;
+			height: 100%;
+			cursor: pointer;
+		}
+		
+		.file-input-label {
+			display: inline-block;
+			padding: 12px 24px;
+			background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+			color: white;
+			border-radius: 8px;
+			cursor: pointer;
+			transition: all 0.3s ease;
+		}
+		
+		.file-input-label:hover {
+			transform: translateY(-2px);
+			box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+		}
+		
+		@media (max-width: 768px) {
+			.container {
+				padding: 10px;
+			}
+			
+			.header {
+				flex-direction: column;
+				gap: 20px;
+				text-align: center;
+			}
+			
+			.card {
+				padding: 20px;
+			}
+			
+			input, select, textarea {
+				max-width: 100%;
+			}
+		}
+		
+		/* Loader styles */
+		.loader {
+			display: inline-flex;
+			align-items: center;
+			gap: 8px;
+			padding: 12px 20px;
+			background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+			border: 1px solid #dee2e6;
+			border-radius: 8px;
+			color: #495057;
+			font-weight: 500;
+			margin: 10px 0;
+			animation: pulse 1.5s ease-in-out infinite;
+		}
+		
+		@keyframes pulse {
+			0%, 100% { opacity: 1; }
+			50% { opacity: 0.7; }
+		}
+		
+		/* Image preview styles */
+		.image-preview {
+			margin: 15px 0;
+			padding: 15px;
+			background: #f8f9fa;
+			border-radius: 8px;
+			border: 1px solid #dee2e6;
+		}
+		
+		.image-preview h4 {
+			margin: 0 0 10px 0;
+			color: #495057;
+			font-size: 1rem;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<h2>🎓 Learner Portal</h2>
+			<a href="/" class="back-btn">← Back to Home</a>
+		</div>
+		
+		<div class="card">
+			<h3>🎯 Select Course & Setup</h3>
+			<div class="form-group">
+				<label for="course">Course</label>
+				<select id="course"></select>
+			</div>
+			<div class="form-group">
+				<label for="name">Your Name</label>
+				<input id="name" placeholder="Enter your name" />
+			</div>
+			<div class="form-group">
+				<label for="lang">Preferred Language</label>
+				<select id="lang">
+					<option value="en">English</option>
+					<option value="hi">Hindi</option>
+				</select>
+			</div>
+			<button id="voiceBtn" class="voice-btn">🎤 Start Voice Tutor</button>
+			<div class="hint">Voice-first interactive learning; or use the assessment options below.</div>
+		</div>
+
+		<div class="card">
+			<h3>📄 Question Paper Generator</h3>
+			<button id="paperBtn" class="assessment-btn">📝 Generate Question Paper</button>
+			<div id="paperLoader" class="loader" style="display:none;">⏳ Generating question paper...</div>
+			<a id="pdfLink" href="#" target="_blank" class="btn" style="display:none;">📥 Download PDF</a>
+			<pre id="paperOut"></pre>
+		</div>
+
+		<div class="card">
+			<h3>✍️ Handwritten Assessment</h3>
+			<button id="generateQuestionsBtn" class="assessment-btn">📋 Generate Assessment Questions</button>
+			<div id="questionsDisplay" class="hidden">
+				<div class="questions-list">
+					<h4>📝 Assessment Questions - Write your answers on paper:</h4>
+					<div id="questionsList"></div>
+					<p><strong>Instructions:</strong> Write your answers on paper, then take a photo and upload below.</p>
+				</div>
+				<div class="file-input-wrapper">
+					<input type="file" id="handwrittenImage" accept="image/*" capture="environment" />
+					<label for="handwrittenImage" class="file-input-label">📷 Upload Handwritten Answers</label>
+				</div>
+				<div id="imagePreview" class="image-preview" style="display:none;">
+					<h4>📷 Uploaded Image:</h4>
+					<img id="previewImg" src="" alt="Uploaded handwritten answers" style="max-width: 100%; max-height: 300px; border: 1px solid #ddd; border-radius: 8px; margin: 10px 0;" />
+				</div>
+				<button id="analyzeBtn" disabled class="assessment-btn">🔍 Analyze Handwritten Answers</button>
+			</div>
+			<div id="analysisResult" class="hidden">
+				<div class="assessment-results">
+					<h4>📊 Assessment Results:</h4>
+					<div id="assessmentScore" class="score-display"></div>
+					<div id="assessmentDetails"></div>
+					<button id="generateStudyPlanBtn" class="btn" style="display:none;">📚 Generate Study Plan</button>
+					<div id="studyPlanResult" class="study-plan"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script>
+	async function loadCourses() {
+		try {
+			const res = await fetch('/api/courses');
+			const data = await res.json();
+			console.log('Loaded data:', data);
+			const courses = data.courses || data; // Handle both formats
+			const sel = document.getElementById('course');
+			// Filter to show only courses with prompts generated
+			const validCourses = courses.filter(c => c.prompt);
+			console.log('Valid courses with prompts:', validCourses);
+			if (validCourses.length === 0) {
+				const opt = document.createElement('option');
+				opt.value = ''; opt.textContent = 'No courses available - create one in admin';
+				sel.appendChild(opt);
+			} else {
+				validCourses.forEach(c => {
+					const opt = document.createElement('option');
+					opt.value = c.id; opt.textContent = c.title;
+					sel.appendChild(opt);
+				});
+			}
+		} catch (err) {
+			console.error('Error loading courses:', err);
+		}
+	}
+	loadCourses();
+
+	document.getElementById('voiceBtn').onclick = () => {
+		const courseId = document.getElementById('course').value;
+		const name = encodeURIComponent(document.getElementById('name').value || 'Learner');
+		const lang = document.getElementById('lang').value;
+		window.location.href = `/voice.html?courseId=${courseId}&name=${name}&lang=${lang}`;
+	};
+
+	document.getElementById('paperBtn').onclick = async () => {
+		const courseId = document.getElementById('course').value;
+		const learnerName = document.getElementById('name').value || 'Learner';
+		if (!courseId) {
+			alert('Please select a course first');
+			return;
+		}
+		
+		// Show loader and disable button
+		const paperBtn = document.getElementById('paperBtn');
+		const paperLoader = document.getElementById('paperLoader');
+		const paperOut = document.getElementById('paperOut');
+		const pdfLink = document.getElementById('pdfLink');
+		
+		paperBtn.disabled = true;
+		paperBtn.textContent = '⏳ Generating...';
+		paperLoader.style.display = 'block';
+		paperOut.textContent = '';
+		pdfLink.style.display = 'none';
+		
+		try {
+			const res = await fetch('/api/assessment/paper', { 
+				method: 'POST', 
+				headers: { 'Content-Type': 'application/json' }, 
+				body: JSON.stringify({ courseId, learnerName }) 
+			});
+			const data = await res.json();
+			
+			if (res.ok) {
+				// Show PDF link if available
+				if (data.pdfPath) {
+					pdfLink.href = data.pdfPath;
+					pdfLink.style.display = 'inline-block';
+					paperOut.textContent = 'PDF generated successfully!';
+				} else {
+					pdfLink.style.display = 'none';
+				}
+				
+				// Display HTML content if available
+				if (data.html) {
+					// Create a new window to display the HTML
+					const newWindow = window.open('', '_blank', 'width=800,height=600,scrollbars=yes');
+					newWindow.document.write(data.html);
+					newWindow.document.close();
+					paperOut.textContent = 'Question paper opened in new window!';
+				} else {
+					paperOut.textContent = 'Question paper generated but no content available.';
+				}
+			} else {
+				paperOut.textContent = 'Error: ' + (data.error || 'Unknown error');
+			}
+		} catch (error) {
+			paperOut.textContent = 'Error: ' + error.message;
+		} finally {
+			// Hide loader and re-enable button
+			paperBtn.disabled = false;
+			paperBtn.textContent = '📝 Generate Question Paper';
+			paperLoader.style.display = 'none';
+		}
+	};
+
+	// Handwritten assessment functionality
+	let currentAssessmentData = null;
+	let currentQuestions = null;
+
+	document.getElementById('generateQuestionsBtn').onclick = async () => {
+		const courseId = document.getElementById('course').value;
+		const learnerName = document.getElementById('name').value || 'Learner';
+		
+		if (!courseId) {
+			alert('Please select a course first');
+			return;
+		}
+
+		try {
+			document.getElementById('generateQuestionsBtn').textContent = 'Generating Questions...';
+			document.getElementById('generateQuestionsBtn').disabled = true;
+
+			const res = await fetch('/api/assessment/questions', {
+				method: 'POST',
+				headers: { 'Content-Type': 'application/json' },
+				body: JSON.stringify({ courseId, learnerName })
+			});
+
+			const data = await res.json();
+			
+			if (res.ok) {
+				currentQuestions = data.questions;
+				displayQuestions(data.questions);
+				document.getElementById('questionsDisplay').classList.remove('hidden');
+			} else {
+				alert('Failed to generate questions: ' + (data.error || 'Unknown error'));
+			}
+		} catch (err) {
+			alert('Error generating questions: ' + err.message);
+		} finally {
+			document.getElementById('generateQuestionsBtn').textContent = 'Generate Assessment Questions';
+			document.getElementById('generateQuestionsBtn').disabled = false;
+		}
+	};
+
+	function displayQuestions(questions) {
+		const questionsList = document.getElementById('questionsList');
+		let html = '<ol>';
+		questions.forEach((q, index) => {
+			html += `<li><strong>${q.q}</strong></li>`;
+		});
+		html += '</ol>';
+		questionsList.innerHTML = html;
+	}
+
+	document.getElementById('handwrittenImage').onchange = (e) => {
+		const file = e.target.files[0];
+		const imagePreview = document.getElementById('imagePreview');
+		const previewImg = document.getElementById('previewImg');
+		const analyzeBtn = document.getElementById('analyzeBtn');
+		
+		if (file) {
+			// Show image preview
+			const reader = new FileReader();
+			reader.onload = (e) => {
+				previewImg.src = e.target.result;
+				imagePreview.style.display = 'block';
+			};
+			reader.readAsDataURL(file);
+			
+			analyzeBtn.disabled = false;
+		} else {
+			// Hide image preview
+			imagePreview.style.display = 'none';
+			previewImg.src = '';
+			analyzeBtn.disabled = true;
+		}
+	};
+
+	document.getElementById('analyzeBtn').onclick = async () => {
+		const courseId = document.getElementById('course').value;
+		const learnerName = document.getElementById('name').value || 'Learner';
+		const file = document.getElementById('handwrittenImage').files[0];
+		
+		if (!courseId) {
+			alert('Please select a course first');
+			return;
+		}
+		if (!file) {
+			alert('Please select an image first');
+			return;
+		}
+
+		const formData = new FormData();
+		formData.append('image', file);
+		formData.append('courseId', courseId);
+		formData.append('learnerName', learnerName);
+		formData.append('questions', JSON.stringify(currentQuestions));
+
+		try {
+			document.getElementById('analyzeBtn').textContent = 'Analyzing...';
+			document.getElementById('analyzeBtn').disabled = true;
+
+			const res = await fetch('/api/assessment/handwritten', {
+				method: 'POST',
+				body: formData
+			});
+
+			const data = await res.json();
+			
+			if (res.ok) {
+				currentAssessmentData = data;
+				displayAssessmentResults(data);
+				document.getElementById('generateStudyPlanBtn').style.display = 'inline-block';
+			} else {
+				alert('Analysis failed: ' + (data.error || 'Unknown error'));
+			}
+		} catch (err) {
+			alert('Error analyzing image: ' + err.message);
+		} finally {
+			document.getElementById('analyzeBtn').textContent = 'Analyze Handwritten Answers';
+			document.getElementById('analyzeBtn').disabled = false;
+		}
+	};
+
+	function displayAssessmentResults(data) {
+		const scoreDiv = document.getElementById('assessmentScore');
+		const detailsDiv = document.getElementById('assessmentDetails');
+		
+		scoreDiv.innerHTML = `
+			<h5>Score: ${data.score}/${data.total} (${Math.round((data.score/data.total)*100)}%)</h5>
+			<p><strong>Level:</strong> ${data.level}</p>
+		`;
+
+		let detailsHtml = '<h5>Question Analysis:</h5><ul>';
+		data.qaPairs.forEach((qa, index) => {
+			detailsHtml += `
+				<li>
+					<strong>Q${index + 1}:</strong> ${qa.question}<br>
+					<strong>Your Answer:</strong> ${qa.answer}<br>
+					<strong>Correct:</strong> ${qa.correct ? '✅ Yes' : '❌ No'}<br>
+					${qa.feedback ? `<strong>Feedback:</strong> ${qa.feedback}<br>` : ''}
+				</li>
+			`;
+		});
+		detailsHtml += '</ul>';
+		detailsDiv.innerHTML = detailsHtml;
+
+		document.getElementById('analysisResult').classList.remove('hidden');
+	}
+
+	document.getElementById('generateStudyPlanBtn').onclick = async () => {
+		if (!currentAssessmentData) {
+			alert('No assessment data available');
+			return;
+		}
+
+		try {
+			document.getElementById('generateStudyPlanBtn').textContent = 'Generating Study Plan...';
+			document.getElementById('generateStudyPlanBtn').disabled = true;
+
+			// Add courseId to the assessment data
+			const studyPlanData = {
+				...currentAssessmentData,
+				courseId: document.getElementById('course').value
+			};
+
+			const res = await fetch('/api/studyplan/handwritten', {
+				method: 'POST',
+				headers: { 'Content-Type': 'application/json' },
+				body: JSON.stringify(studyPlanData)
+			});
+
+			const data = await res.json();
+			
+			if (res.ok) {
+				document.getElementById('studyPlanResult').innerHTML = `
+					<h5>📚 Personalized Study Plan:</h5>
+					<div class="study-plan">${data.plan}</div>
+				`;
+			} else {
+				alert('Study plan generation failed: ' + (data.error || 'Unknown error'));
+			}
+		} catch (err) {
+			alert('Error generating study plan: ' + err.message);
+		} finally {
+			document.getElementById('generateStudyPlanBtn').textContent = 'Generate Study Plan';
+			document.getElementById('generateStudyPlanBtn').disabled = false;
+		}
+	};
+	</script>
+</body>
+</html>

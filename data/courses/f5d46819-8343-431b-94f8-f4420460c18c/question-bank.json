@@ -1,0 +1,114 @@
+{
+  "questions": [
+    {
+      "q": "What is a noun?",
+      "a": "A naming word.",
+      "level": "easy"
+    },
+    {
+      "q": "Give an example of a noun.",
+      "a": "Dog.",
+      "level": "easy"
+    },
+    {
+      "q": "What is a verb?",
+      "a": "An action word.",
+      "level": "easy"
+    },
+    {
+      "q": "Give an example of a verb.",
+      "a": "Run.",
+      "level": "easy"
+    },
+    {
+      "q": "What does an adjective do?",
+      "a": "Describes a noun.",
+      "level": "easy"
+    },
+    {
+      "q": "Give an example of an adjective.",
+      "a": "Tall.",
+      "level": "easy"
+    },
+    {
+      "q": "What type of sentence tells something?",
+      "a": "Declarative.",
+      "level": "medium"
+    },
+    {
+      "q": "What type of sentence asks a question?",
+      "a": "Interrogative.",
+      "level": "medium"
+    },
+    {
+      "q": "What type of sentence gives a command?",
+      "a": "Imperative.",
+      "level": "medium"
+    },
+    {
+      "q": "What type of sentence shows strong feeling?",
+      "a": "Exclamatory.",
+      "level": "medium"
+    },
+    {
+      "q": "Change to present tense: He went to school.",
+      "a": "He goes to school.",
+      "level": "medium"
+    },
+    {
+      "q": "Change to past tense: They eat lunch.",
+      "a": "They ate lunch.",
+      "level": "medium"
+    },
+    {
+      "q": "Change to future tense: We watch a movie.",
+      "a": "We will watch a movie.",
+      "level": "medium"
+    },
+    {
+      "q": "What does a full stop do?",
+      "a": "Ends a sentence.",
+      "level": "hard"
+    },
+    {
+      "q": "What does a question mark show?",
+      "a": "Ends a question.",
+      "level": "hard"
+    },
+    {
+      "q": "What does an exclamation mark express?",
+      "a": "Strong feeling.",
+      "level": "hard"
+    },
+    {
+      "q": "What does a comma do?",
+      "a": "Separates items in a list.",
+      "level": "hard"
+    },
+    {
+      "q": "Identify the nouns: The cat is on the roof.",
+      "a": "Cat, roof.",
+      "level": "hard"
+    },
+    {
+      "q": "Identify the verbs: She dances well.",
+      "a": "Dances.",
+      "level": "hard"
+    },
+    {
+      "q": "Identify the adjectives: The old man walks slowly.",
+      "a": "Old.",
+      "level": "hard"
+    },
+    {
+      "q": "What is the declarative sentence's purpose?",
+      "a": "It tells something.",
+      "level": "hard"
+    },
+    {
+      "q": "What is the purpose of an imperative sentence?",
+      "a": "It gives a command.",
+      "level": "hard"
+    }
+  ]
+}

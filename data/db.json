@@ -1,0 +1,418 @@
+{
+  "courses": {
+    "cabcb24b-d422-4acb-8736-d839bb4128e4": {
+      "id": "cabcb24b-d422-4acb-8736-d839bb4128e4",
+      "title": "Maths - Fractions",
+      "language": "auto",
+      "materialTextPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn/data/courses/cabcb24b-d422-4acb-8736-d839bb4128e4/material.txt",
+      "promptPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn/data/courses/cabcb24b-d422-4acb-8736-d839bb4128e4/system-prompt.txt",
+      "createdAt": "2025-09-03T12:59:25.890Z"
+    },
+    "440adf9c-333a-4fa4-81dd-ab00bb73ff87": {
+      "id": "440adf9c-333a-4fa4-81dd-ab00bb73ff87",
+      "title": "Chapter 1",
+      "language": "auto",
+      "materialTextPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn/data/courses/440adf9c-333a-4fa4-81dd-ab00bb73ff87/material.txt",
+      "promptPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn/data/courses/440adf9c-333a-4fa4-81dd-ab00bb73ff87/system-prompt.txt",
+      "createdAt": "2025-09-03T12:59:25.899Z"
+    },
+    "b6ccdccc-f918-4e66-be80-100efdd3cc95": {
+      "id": "b6ccdccc-f918-4e66-be80-100efdd3cc95",
+      "title": "Chapter 1",
+      "language": "auto",
+      "materialTextPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn/data/courses/b6ccdccc-f918-4e66-be80-100efdd3cc95/material.txt",
+      "promptPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn/data/courses/b6ccdccc-f918-4e66-be80-100efdd3cc95/system-prompt.txt",
+      "createdAt": "2025-09-03T12:59:25.907Z"
+    },
+    "bc30ec16-3ffa-4dd7-9ad4-cb7bf8f75dfb": {
+      "id": "bc30ec16-3ffa-4dd7-9ad4-cb7bf8f75dfb",
+      "title": "Chapter 1",
+      "language": "auto",
+      "materialTextPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn/data/courses/bc30ec16-3ffa-4dd7-9ad4-cb7bf8f75dfb/material.txt",
+      "promptPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn/data/courses/bc30ec16-3ffa-4dd7-9ad4-cb7bf8f75dfb/system-prompt.txt",
+      "createdAt": "2025-09-03T12:59:25.914Z"
+    },
+    "b9129389-eb7f-4873-9a79-7ba3126ff81e": {
+      "id": "b9129389-eb7f-4873-9a79-7ba3126ff81e",
+      "title": "Chapter 1",
+      "language": "auto",
+      "materialTextPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn/data/courses/b9129389-eb7f-4873-9a79-7ba3126ff81e/material.txt",
+      "promptPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn/data/courses/b9129389-eb7f-4873-9a79-7ba3126ff81e/system-prompt.txt",
+      "createdAt": "2025-09-03T12:59:25.919Z"
+    },
+    "eecddd50-011f-4ea1-8354-fc81896ddafe": {
+      "id": "eecddd50-011f-4ea1-8354-fc81896ddafe",
+      "title": "Science",
+      "language": "en",
+      "materialTextPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn/data/courses/eecddd50-011f-4ea1-8354-fc81896ddafe/material.txt",
+      "promptPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn/data/courses/eecddd50-011f-4ea1-8354-fc81896ddafe/system-prompt.txt",
+      "createdAt": "2025-09-03T13:00:53.674Z"
+    },
+    "b051d1dd-4e9f-4660-9127-42cf7e394cf7": {
+      "id": "b051d1dd-4e9f-4660-9127-42cf7e394cf7",
+      "title": "Temp",
+      "language": "auto",
+      "materialTextPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn/data/courses/b051d1dd-4e9f-4660-9127-42cf7e394cf7/material.txt",
+      "promptPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn/data/courses/b051d1dd-4e9f-4660-9127-42cf7e394cf7/system-prompt.txt",
+      "createdAt": "2025-09-03T13:09:44.483Z"
+    },
+    "28f84936-3c93-47b3-89e2-20c5526bd80b": {
+      "id": "28f84936-3c93-47b3-89e2-20c5526bd80b",
+      "title": "Temp",
+      "language": "auto",
+      "materialTextPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn/data/courses/28f84936-3c93-47b3-89e2-20c5526bd80b/material.txt",
+      "promptPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn/data/courses/28f84936-3c93-47b3-89e2-20c5526bd80b/system-prompt.txt",
+      "createdAt": "2025-09-03T13:10:33.635Z"
+    },
+    "cc1b2b7c-c089-49fd-a748-b7c811f9b5d8": {
+      "id": "cc1b2b7c-c089-49fd-a748-b7c811f9b5d8",
+      "title": "TmpCourse",
+      "language": "auto",
+      "materialTextPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn/data/courses/cc1b2b7c-c089-49fd-a748-b7c811f9b5d8/material.txt",
+      "promptPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn/data/courses/cc1b2b7c-c089-49fd-a748-b7c811f9b5d8/system-prompt.txt",
+      "createdAt": "2025-09-03T13:13:36.800Z"
+    },
+    "47d3bf95-c347-4b4b-9e74-1a8b99723b84": {
+      "id": "47d3bf95-c347-4b4b-9e74-1a8b99723b84",
+      "title": "LogTest",
+      "language": "auto",
+      "materialTextPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn/data/courses/47d3bf95-c347-4b4b-9e74-1a8b99723b84/material.txt",
+      "promptPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn/data/courses/47d3bf95-c347-4b4b-9e74-1a8b99723b84/system-prompt.txt",
+      "createdAt": "2025-09-03T13:19:02.895Z"
+    },
+    "2595c662-d272-4a34-b77f-354f1b2d6390": {
+      "id": "2595c662-d272-4a34-b77f-354f1b2d6390",
+      "title": "Science 1",
+      "language": "auto",
+      "materialTextPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn/data/courses/2595c662-d272-4a34-b77f-354f1b2d6390/material.txt",
+      "promptPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn/data/courses/2595c662-d272-4a34-b77f-354f1b2d6390/system-prompt.txt",
+      "createdAt": "2025-09-03T13:34:25.746Z"
+    },
+    "26cdef0f-f04e-49cb-b8f3-186463556813": {
+      "id": "26cdef0f-f04e-49cb-b8f3-186463556813",
+      "title": "science 2",
+      "language": "auto",
+      "materialTextPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn/data/courses/26cdef0f-f04e-49cb-b8f3-186463556813/material.txt",
+      "promptPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn/data/courses/26cdef0f-f04e-49cb-b8f3-186463556813/system-prompt.txt",
+      "createdAt": "2025-09-03T13:37:49.299Z"
+    },
+    "f053920d-6441-4d26-b1aa-d3a3f6376feb": {
+      "id": "f053920d-6441-4d26-b1aa-d3a3f6376feb",
+      "title": "science 3",
+      "language": "en",
+      "materialTextPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn/data/courses/f053920d-6441-4d26-b1aa-d3a3f6376feb/material.txt",
+      "promptPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn/data/courses/f053920d-6441-4d26-b1aa-d3a3f6376feb/system-prompt.txt",
+      "createdAt": "2025-09-03T13:41:19.844Z"
+    },
+    "557d0b34-a5c7-4e08-a29d-6ffb2a3ced8a": {
+      "id": "557d0b34-a5c7-4e08-a29d-6ffb2a3ced8a",
+      "title": "science 3",
+      "language": "en",
+      "materialTextPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn/data/courses/557d0b34-a5c7-4e08-a29d-6ffb2a3ced8a/material.txt",
+      "promptPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn/data/courses/557d0b34-a5c7-4e08-a29d-6ffb2a3ced8a/system-prompt.txt",
+      "createdAt": "2025-09-03T13:50:23.335Z"
+    },
+    "934cd1b9-d093-493c-8713-915921cfcef4": {
+      "id": "934cd1b9-d093-493c-8713-915921cfcef4",
+      "title": "s4",
+      "language": "auto",
+      "materialTextPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn/data/courses/934cd1b9-d093-493c-8713-915921cfcef4/material.txt",
+      "promptPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn/data/courses/934cd1b9-d093-493c-8713-915921cfcef4/system-prompt.txt",
+      "createdAt": "2025-09-03T13:50:42.194Z"
+    },
+    "3cd727d7-ed28-440d-965b-a6aa972016bb": {
+      "id": "3cd727d7-ed28-440d-965b-a6aa972016bb",
+      "title": "PromptLogTest",
+      "language": "auto",
+      "materialTextPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn/data/courses/3cd727d7-ed28-440d-965b-a6aa972016bb/material.txt",
+      "promptPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn/data/courses/3cd727d7-ed28-440d-965b-a6aa972016bb/system-prompt.txt",
+      "questionBankPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn/data/courses/3cd727d7-ed28-440d-965b-a6aa972016bb/question-bank.json",
+      "createdAt": "2025-09-03T13:51:44.667Z"
+    },
+    "51c6efc0-46a1-4f51-8768-0a194770a7af": {
+      "id": "51c6efc0-46a1-4f51-8768-0a194770a7af",
+      "title": "s4",
+      "language": "auto",
+      "materialTextPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn/data/courses/51c6efc0-46a1-4f51-8768-0a194770a7af/material.txt",
+      "promptPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn/data/courses/51c6efc0-46a1-4f51-8768-0a194770a7af/system-prompt.txt",
+      "questionBankPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn/data/courses/51c6efc0-46a1-4f51-8768-0a194770a7af/question-bank.json",
+      "createdAt": "2025-09-03T13:51:58.737Z"
+    },
+    "1fae9ff1-6cac-44f5-9f80-ef50604a2171": {
+      "id": "1fae9ff1-6cac-44f5-9f80-ef50604a2171",
+      "title": "s5",
+      "language": "auto",
+      "materialTextPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn/data/courses/1fae9ff1-6cac-44f5-9f80-ef50604a2171/material.txt",
+      "promptPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn/data/courses/1fae9ff1-6cac-44f5-9f80-ef50604a2171/system-prompt.txt",
+      "questionBankPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn/data/courses/1fae9ff1-6cac-44f5-9f80-ef50604a2171/question-bank.json",
+      "createdAt": "2025-09-03T13:52:23.896Z"
+    },
+    "e45f9b5e-2863-4ef0-ae45-c9f85b08f9f5": {
+      "id": "e45f9b5e-2863-4ef0-ae45-c9f85b08f9f5",
+      "title": "PromptLogTest2",
+      "language": "auto",
+      "materialTextPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn/data/courses/e45f9b5e-2863-4ef0-ae45-c9f85b08f9f5/material.txt",
+      "promptPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn/data/courses/e45f9b5e-2863-4ef0-ae45-c9f85b08f9f5/system-prompt.txt",
+      "questionBankPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn/data/courses/e45f9b5e-2863-4ef0-ae45-c9f85b08f9f5/question-bank.json",
+      "createdAt": "2025-09-03T13:53:39.044Z"
+    },
+    "9b79c75a-10cf-492f-8a47-871db9abf9de": {
+      "id": "9b79c75a-10cf-492f-8a47-871db9abf9de",
+      "title": "s6",
+      "language": "auto",
+      "materialTextPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn/data/courses/9b79c75a-10cf-492f-8a47-871db9abf9de/material.txt",
+      "promptPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn/data/courses/9b79c75a-10cf-492f-8a47-871db9abf9de/system-prompt.txt",
+      "questionBankPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn/data/courses/9b79c75a-10cf-492f-8a47-871db9abf9de/question-bank.json",
+      "createdAt": "2025-09-03T15:05:32.662Z"
+    },
+    "b896fdb6-d90d-4561-95f5-ea1811375b93": {
+      "id": "b896fdb6-d90d-4561-95f5-ea1811375b93",
+      "title": "s7",
+      "language": "en",
+      "materialTextPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn/data/courses/b896fdb6-d90d-4561-95f5-ea1811375b93/material.txt",
+      "promptPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn/data/courses/b896fdb6-d90d-4561-95f5-ea1811375b93/system-prompt.txt",
+      "questionBankPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn/data/courses/b896fdb6-d90d-4561-95f5-ea1811375b93/question-bank.json",
+      "createdAt": "2025-09-03T15:17:57.419Z"
+    },
+    "446b96b1-377b-47ba-adde-e4d18bc9a5e0": {
+      "id": "446b96b1-377b-47ba-adde-e4d18bc9a5e0",
+      "title": "s8",
+      "language": "auto",
+      "materialTextPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn/data/courses/446b96b1-377b-47ba-adde-e4d18bc9a5e0/material.txt",
+      "promptPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn/data/courses/446b96b1-377b-47ba-adde-e4d18bc9a5e0/system-prompt.txt",
+      "questionBankPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn/data/courses/446b96b1-377b-47ba-adde-e4d18bc9a5e0/question-bank.json",
+      "createdAt": "2025-09-03T15:20:51.978Z"
+    },
+    "711e03f8-59fd-4c35-977e-eecd8a8b802b": {
+      "id": "711e03f8-59fd-4c35-977e-eecd8a8b802b",
+      "title": "PDF Test",
+      "language": "auto",
+      "materialTextPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn/data/courses/711e03f8-59fd-4c35-977e-eecd8a8b802b/material.txt",
+      "promptPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn/data/courses/711e03f8-59fd-4c35-977e-eecd8a8b802b/system-prompt.txt",
+      "questionBankPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn/data/courses/711e03f8-59fd-4c35-977e-eecd8a8b802b/question-bank.json",
+      "createdAt": "2025-09-03T15:32:09.073Z"
+    },
+    "a292a9e0-538c-4ca1-bc12-6bf597574012": {
+      "id": "a292a9e0-538c-4ca1-bc12-6bf597574012",
+      "title": "s9",
+      "language": "auto",
+      "materialTextPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn/data/courses/a292a9e0-538c-4ca1-bc12-6bf597574012/material.txt",
+      "promptPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn/data/courses/a292a9e0-538c-4ca1-bc12-6bf597574012/system-prompt.txt",
+      "questionBankPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn/data/courses/a292a9e0-538c-4ca1-bc12-6bf597574012/question-bank.json",
+      "createdAt": "2025-09-03T15:37:42.626Z"
+    },
+    "a4c868bf-88e6-46f1-a085-959e270502d6": {
+      "id": "a4c868bf-88e6-46f1-a085-959e270502d6",
+      "title": "s10",
+      "language": "auto",
+      "materialTextPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn/data/courses/a4c868bf-88e6-46f1-a085-959e270502d6/material.txt",
+      "promptPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn/data/courses/a4c868bf-88e6-46f1-a085-959e270502d6/system-prompt.txt",
+      "questionBankPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn/data/courses/a4c868bf-88e6-46f1-a085-959e270502d6/question-bank.json",
+      "createdAt": "2025-09-03T15:50:56.399Z"
+    },
+    "5e1fb318-a4a3-406a-ab50-5c3037a35ff8": {
+      "id": "5e1fb318-a4a3-406a-ab50-5c3037a35ff8",
+      "title": "w11",
+      "language": "auto",
+      "materialTextPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn/data/courses/5e1fb318-a4a3-406a-ab50-5c3037a35ff8/material.txt",
+      "promptPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn/data/courses/5e1fb318-a4a3-406a-ab50-5c3037a35ff8/system-prompt.txt",
+      "questionBankPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn/data/courses/5e1fb318-a4a3-406a-ab50-5c3037a35ff8/question-bank.json",
+      "createdAt": "2025-09-04T02:46:05.660Z"
+    },
+    "e8aa96d5-fceb-4a0c-8a87-5a8f04977fc6": {
+      "id": "e8aa96d5-fceb-4a0c-8a87-5a8f04977fc6",
+      "title": "w22",
+      "language": "auto",
+      "materialTextPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn/data/courses/e8aa96d5-fceb-4a0c-8a87-5a8f04977fc6/material.txt",
+      "promptPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn/data/courses/e8aa96d5-fceb-4a0c-8a87-5a8f04977fc6/system-prompt.txt",
+      "questionBankPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn/data/courses/e8aa96d5-fceb-4a0c-8a87-5a8f04977fc6/question-bank.json",
+      "createdAt": "2025-09-04T03:01:01.407Z"
+    },
+    "fecb548a-0c64-4672-a6a5-3c7744f9a539": {
+      "id": "fecb548a-0c64-4672-a6a5-3c7744f9a539",
+      "title": "w33",
+      "language": "auto",
+      "materialTextPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn/data/courses/fecb548a-0c64-4672-a6a5-3c7744f9a539/material.txt",
+      "promptPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn/data/courses/fecb548a-0c64-4672-a6a5-3c7744f9a539/system-prompt.txt",
+      "questionBankPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn/data/courses/fecb548a-0c64-4672-a6a5-3c7744f9a539/question-bank.json",
+      "createdAt": "2025-09-04T03:10:48.033Z"
+    },
+    "9731afe6-5561-4c8c-bc61-b13d5a674e45": {
+      "id": "9731afe6-5561-4c8c-bc61-b13d5a674e45",
+      "title": "w44",
+      "language": "auto",
+      "materialTextPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn/data/courses/9731afe6-5561-4c8c-bc61-b13d5a674e45/material.txt",
+      "promptPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn/data/courses/9731afe6-5561-4c8c-bc61-b13d5a674e45/system-prompt.txt",
+      "questionBankPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn/data/courses/9731afe6-5561-4c8c-bc61-b13d5a674e45/question-bank.json",
+      "createdAt": "2025-09-04T03:17:03.727Z"
+    },
+    "4ad2806b-a22b-4475-8d52-324b42737840": {
+      "id": "4ad2806b-a22b-4475-8d52-324b42737840",
+      "title": "w66",
+      "language": "auto",
+      "materialTextPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn/data/courses/4ad2806b-a22b-4475-8d52-324b42737840/material.txt",
+      "promptPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn/data/courses/4ad2806b-a22b-4475-8d52-324b42737840/system-prompt.txt",
+      "questionBankPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn/data/courses/4ad2806b-a22b-4475-8d52-324b42737840/question-bank.json",
+      "createdAt": "2025-09-04T03:45:54.637Z"
+    },
+    "a2a2c1fa-ed7f-40cb-af42-488b54d8d3f2": {
+      "id": "a2a2c1fa-ed7f-40cb-af42-488b54d8d3f2",
+      "title": "w667",
+      "language": "auto",
+      "materialTextPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn/data/courses/a2a2c1fa-ed7f-40cb-af42-488b54d8d3f2/material.txt",
+      "promptPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn/data/courses/a2a2c1fa-ed7f-40cb-af42-488b54d8d3f2/system-prompt.txt",
+      "questionBankPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn/data/courses/a2a2c1fa-ed7f-40cb-af42-488b54d8d3f2/question-bank.json",
+      "createdAt": "2025-09-04T03:53:48.719Z"
+    },
+    "21e1a9a4-8a84-467a-b713-eb4617828bfd": {
+      "id": "21e1a9a4-8a84-467a-b713-eb4617828bfd",
+      "title": "w99",
+      "language": "auto",
+      "materialTextPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn/data/courses/21e1a9a4-8a84-467a-b713-eb4617828bfd/material.txt",
+      "promptPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn/data/courses/21e1a9a4-8a84-467a-b713-eb4617828bfd/system-prompt.txt",
+      "questionBankPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn/data/courses/21e1a9a4-8a84-467a-b713-eb4617828bfd/question-bank.json",
+      "createdAt": "2025-09-04T06:44:56.085Z"
+    },
+    "1c862b57-cf42-4712-94a3-4a6a631d4158": {
+      "id": "1c862b57-cf42-4712-94a3-4a6a631d4158",
+      "title": "w99",
+      "language": "en",
+      "materialTextPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn/data/courses/1c862b57-cf42-4712-94a3-4a6a631d4158/material.txt",
+      "promptPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn/data/courses/1c862b57-cf42-4712-94a3-4a6a631d4158/system-prompt.txt",
+      "questionBankPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn/data/courses/1c862b57-cf42-4712-94a3-4a6a631d4158/question-bank.json",
+      "createdAt": "2025-09-04T06:45:00.098Z"
+    },
+    "ab5cf99a-61e8-49fe-84a7-180e4590a610": {
+      "id": "ab5cf99a-61e8-49fe-84a7-180e4590a610",
+      "title": "s1",
+      "language": "en",
+      "createdAt": "2025-09-04T06:57:43.436Z",
+      "material": false,
+      "prompt": false
+    },
+    "39ee1ad7-0c48-4b12-94ee-b99e036b6b9d": {
+      "id": "39ee1ad7-0c48-4b12-94ee-b99e036b6b9d",
+      "title": "s1",
+      "language": "en",
+      "createdAt": "2025-09-04T07:00:02.556Z",
+      "material": false,
+      "prompt": true,
+      "questionBank": true
+    },
+    "f2fbb654-bf39-434d-aacd-0a4e517c67e6": {
+      "id": "f2fbb654-bf39-434d-aacd-0a4e517c67e6",
+      "title": "w44",
+      "language": "en",
+      "createdAt": "2025-09-04T07:05:13.357Z",
+      "material": false,
+      "prompt": true,
+      "questionBank": true
+    },
+    "1ca9bfc9-79d0-41a8-8854-6a8ab676981b": {
+      "id": "1ca9bfc9-79d0-41a8-8854-6a8ab676981b",
+      "title": "s22",
+      "language": "en",
+      "materialTextPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn/data/courses/1ca9bfc9-79d0-41a8-8854-6a8ab676981b/material.txt",
+      "promptPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn/data/courses/1ca9bfc9-79d0-41a8-8854-6a8ab676981b/system-prompt.txt",
+      "questionBankPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn/data/courses/1ca9bfc9-79d0-41a8-8854-6a8ab676981b/question-bank.json",
+      "createdAt": "2025-09-04T07:35:56.912Z"
+    },
+    "84e2f278-a5d7-42f1-b7de-205596d0a480": {
+      "id": "84e2f278-a5d7-42f1-b7de-205596d0a480",
+      "title": "s444",
+      "language": "en",
+      "materialTextPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn/data/courses/84e2f278-a5d7-42f1-b7de-205596d0a480/material.txt",
+      "promptPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn/data/courses/84e2f278-a5d7-42f1-b7de-205596d0a480/system-prompt.txt",
+      "questionBankPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn/data/courses/84e2f278-a5d7-42f1-b7de-205596d0a480/question-bank.json",
+      "createdAt": "2025-09-04T07:37:47.239Z",
+      "prompt": true,
+      "questionBank": true
+    },
+    "f5d46819-8343-431b-94f8-f4420460c18c": {
+      "id": "f5d46819-8343-431b-94f8-f4420460c18c",
+      "title": "english",
+      "language": "auto",
+      "materialTextPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn/data/courses/f5d46819-8343-431b-94f8-f4420460c18c/material.txt",
+      "promptPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn/data/courses/f5d46819-8343-431b-94f8-f4420460c18c/system-prompt.txt",
+      "questionBankPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn/data/courses/f5d46819-8343-431b-94f8-f4420460c18c/question-bank.json",
+      "createdAt": "2025-09-04T11:52:53.661Z",
+      "prompt": true,
+      "questionBank": true
+    },
+    "157ac970-2696-4c29-ae85-7896802fd44c": {
+      "id": "157ac970-2696-4c29-ae85-7896802fd44c",
+      "title": "English",
+      "language": "EN",
+      "materialTextPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn copy/data/courses/157ac970-2696-4c29-ae85-7896802fd44c/material.txt",
+      "promptPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn copy/data/courses/157ac970-2696-4c29-ae85-7896802fd44c/system-prompt.txt",
+      "questionBankPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn copy/data/courses/157ac970-2696-4c29-ae85-7896802fd44c/question-bank.json",
+      "createdAt": "2025-09-04T14:06:00.818Z",
+      "prompt": true,
+      "questionBank": true
+    },
+    "eb40acd0-2c25-4e24-bc10-7ed62399d454": {
+      "id": "eb40acd0-2c25-4e24-bc10-7ed62399d454",
+      "title": "English latest",
+      "language": "en",
+      "materialTextPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn copy/data/courses/eb40acd0-2c25-4e24-bc10-7ed62399d454/material.txt",
+      "promptPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn copy/data/courses/eb40acd0-2c25-4e24-bc10-7ed62399d454/system-prompt.txt",
+      "questionBankPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn copy/data/courses/eb40acd0-2c25-4e24-bc10-7ed62399d454/question-bank.json",
+      "createdAt": "2025-09-06T03:49:35.335Z"
+    },
+    "79b8441e-e07c-4d5f-8591-26819fdebe89": {
+      "id": "79b8441e-e07c-4d5f-8591-26819fdebe89",
+      "title": "English latets",
+      "language": "EN",
+      "materialTextPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn copy/data/courses/79b8441e-e07c-4d5f-8591-26819fdebe89/material.txt",
+      "promptPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn copy/data/courses/79b8441e-e07c-4d5f-8591-26819fdebe89/system-prompt.txt",
+      "questionBankPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn copy/data/courses/79b8441e-e07c-4d5f-8591-26819fdebe89/question-bank.json",
+      "createdAt": "2025-09-06T03:51:19.624Z",
+      "prompt": true,
+      "questionBank": false
+    },
+    "7d582c89-6854-46d8-8a18-e9512979233a": {
+      "id": "7d582c89-6854-46d8-8a18-e9512979233a",
+      "title": "Eng",
+      "language": "EN",
+      "materialTextPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn copy/data/courses/7d582c89-6854-46d8-8a18-e9512979233a/material.txt",
+      "promptPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn copy/data/courses/7d582c89-6854-46d8-8a18-e9512979233a/system-prompt.txt",
+      "questionBankPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn copy/data/courses/7d582c89-6854-46d8-8a18-e9512979233a/question-bank.json",
+      "createdAt": "2025-09-06T03:54:29.838Z",
+      "prompt": true,
+      "questionBank": false
+    },
+    "4112da6b-54d2-455c-8df5-369b5fd5630e": {
+      "id": "4112da6b-54d2-455c-8df5-369b5fd5630e",
+      "title": "En",
+      "language": "En",
+      "materialTextPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn copy/data/courses/4112da6b-54d2-455c-8df5-369b5fd5630e/material.txt",
+      "promptPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn copy/data/courses/4112da6b-54d2-455c-8df5-369b5fd5630e/system-prompt.txt",
+      "questionBankPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn copy/data/courses/4112da6b-54d2-455c-8df5-369b5fd5630e/question-bank.json",
+      "createdAt": "2025-09-06T03:59:58.061Z",
+      "prompt": true,
+      "questionBank": false
+    },
+    "f3b853ed-4952-47b5-aea8-43ec6b0bfbb0": {
+      "id": "f3b853ed-4952-47b5-aea8-43ec6b0bfbb0",
+      "title": "En g Test",
+      "language": "EN",
+      "materialTextPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn copy/data/courses/f3b853ed-4952-47b5-aea8-43ec6b0bfbb0/material.txt",
+      "promptPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn copy/data/courses/f3b853ed-4952-47b5-aea8-43ec6b0bfbb0/system-prompt.txt",
+      "questionBankPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn copy/data/courses/f3b853ed-4952-47b5-aea8-43ec6b0bfbb0/question-bank.json",
+      "createdAt": "2025-09-09T11:19:42.176Z",
+      "prompt": true,
+      "questionBank": true
+    },
+    "06da32e5-1871-43d3-9251-d8bae65d04a8": {
+      "id": "06da32e5-1871-43d3-9251-d8bae65d04a8",
+      "title": "Eng",
+      "language": "EN",
+      "materialTextPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn copy/data/courses/06da32e5-1871-43d3-9251-d8bae65d04a8/material.txt",
+      "promptPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn copy/data/courses/06da32e5-1871-43d3-9251-d8bae65d04a8/system-prompt.txt",
+      "questionBankPath": "/Users/harshitagarwal/Desktop/pratham/PrathamLearn copy/data/courses/06da32e5-1871-43d3-9251-d8bae65d04a8/question-bank.json",
+      "createdAt": "2025-09-09T11:39:08.784Z",
+      "prompt": true,
+      "questionBank": true
+    }
+  }
+}

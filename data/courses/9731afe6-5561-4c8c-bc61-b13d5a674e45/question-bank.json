@@ -1,0 +1,114 @@
+{
+  "questions": [
+    {
+      "q": "What is science?",
+      "a": "The study of the natural world.",
+      "level": "easy"
+    },
+    {
+      "q": "What is a hypothesis?",
+      "a": "A guess we make before testing.",
+      "level": "easy"
+    },
+    {
+      "q": "What do we call things that have mass?",
+      "a": "Matter.",
+      "level": "easy"
+    },
+    {
+      "q": "What is an example of a solid?",
+      "a": "Ice.",
+      "level": "easy"
+    },
+    {
+      "q": "What flows and takes the shape of its container?",
+      "a": "Liquid.",
+      "level": "easy"
+    },
+    {
+      "q": "What spreads around and takes up space?",
+      "a": "Gas.",
+      "level": "easy"
+    },
+    {
+      "q": "What pulls objects down?",
+      "a": "Gravity.",
+      "level": "easy"
+    },
+    {
+      "q": "What slows down things when they rub together?",
+      "a": "Friction.",
+      "level": "medium"
+    },
+    {
+      "q": "What do plants use to make food?",
+      "a": "Sunlight.",
+      "level": "easy"
+    },
+    {
+      "q": "What system helps us breathe?",
+      "a": "Respiratory system.",
+      "level": "medium"
+    },
+    {
+      "q": "How many states of matter are there?",
+      "a": "Three.",
+      "level": "easy"
+    },
+    {
+      "q": "What is photosynthesis?",
+      "a": "How plants make food using sunlight.",
+      "level": "medium"
+    },
+    {
+      "q": "What part of the body pumps blood?",
+      "a": "The heart.",
+      "level": "easy"
+    },
+    {
+      "q": "What cycle describes how water moves?",
+      "a": "Water cycle.",
+      "level": "medium"
+    },
+    {
+      "q": "How long does sunlight take to reach Earth?",
+      "a": "Eight minutes.",
+      "level": "medium"
+    },
+    {
+      "q": "What do we call the tiny building blocks of life?",
+      "a": "Cells.",
+      "level": "easy"
+    },
+    {
+      "q": "What are ecosystems?",
+      "a": "Plants, animals, and their environments working together.",
+      "level": "hard"
+    },
+    {
+      "q": "What happens when you heat ice?",
+      "a": "It melts into water.",
+      "level": "medium"
+    },
+    {
+      "q": "What is mechanical energy?",
+      "a": "Energy from movement.",
+      "level": "hard"
+    },
+    {
+      "q": "What do we call the force of push and pull?",
+      "a": "Forces.",
+      "level": "medium"
+    },
+    {
+      "q": "What are the main components of the circulatory system?",
+      "a": "Heart and blood.",
+      "level": "hard"
+    },
+    {
+      "q": "What does the digestive system do?",
+      "a": "Turns food into energy.",
+      "level": "medium"
+    }
+  ]
+}

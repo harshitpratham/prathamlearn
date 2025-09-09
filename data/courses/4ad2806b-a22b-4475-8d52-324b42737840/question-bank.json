@@ -1,0 +1,124 @@
+{
+  "questions": [
+    {
+      "q": "What is science?",
+      "a": "The study of the natural world.",
+      "level": "easy"
+    },
+    {
+      "q": "What do we call a guess in science?",
+      "a": "Hypothesis.",
+      "level": "easy"
+    },
+    {
+      "q": "What is matter?",
+      "a": "Anything that has mass and takes up space.",
+      "level": "easy"
+    },
+    {
+      "q": "What state of matter is ice?",
+      "a": "Solid.",
+      "level": "easy"
+    },
+    {
+      "q": "What happens to ice in the sun?",
+      "a": "It melts into water.",
+      "level": "easy"
+    },
+    {
+      "q": "What makes things move?",
+      "a": "Energy.",
+      "level": "easy"
+    },
+    {
+      "q": "What keeps us on the ground?",
+      "a": "Gravity.",
+      "level": "easy"
+    },
+    {
+      "q": "What do plants use to make food?",
+      "a": "Sunlight.",
+      "level": "easy"
+    },
+    {
+      "q": "What is the water cycle?",
+      "a": "Water evaporates, forms clouds, then rains.",
+      "level": "medium"
+    },
+    {
+      "q": "How many states of matter are there?",
+      "a": "Three.",
+      "level": "medium"
+    },
+    {
+      "q": "What is photosynthesis?",
+      "a": "The process plants use to make food.",
+      "level": "medium"
+    },
+    {
+      "q": "What does the circulatory system do?",
+      "a": "Pumps blood around the body.",
+      "level": "medium"
+    },
+    {
+      "q": "What is friction?",
+      "a": "A force that slows things down.",
+      "level": "medium"
+    },
+    {
+      "q": "Name one system in the human body.",
+      "a": "Respiratory system.",
+      "level": "medium"
+    },
+    {
+      "q": "What type of energy is sound?",
+      "a": "A type of energy that we can hear.",
+      "level": "medium"
+    },
+    {
+      "q": "What is the main function of the digestive system?",
+      "a": "To turn food into energy.",
+      "level": "medium"
+    },
+    {
+      "q": "What pulls objects down to Earth?",
+      "a": "Gravity.",
+      "level": "hard"
+    },
+    {
+      "q": "How long does sunlight take to reach Earth?",
+      "a": "Eight minutes.",
+      "level": "hard"
+    },
+    {
+      "q": "What happens when water is heated?",
+      "a": "It turns to steam.",
+      "level": "hard"
+    },
+    {
+      "q": "What is an ecosystem?",
+      "a": "Plants, animals, and the environment working together.",
+      "level": "hard"
+    },
+    {
+      "q": "What are cells?",
+      "a": "Tiny building blocks of life.",
+      "level": "hard"
+    },
+    {
+      "q": "What is energy?",
+      "a": "The ability to do work or cause change.",
+      "level": "hard"
+    },
+    {
+      "q": "What type of force is a push or pull?",
+      "a": "Mechanical force.",
+      "level": "hard"
+    },
+    {
+      "q": "What happens during evaporation?",
+      "a": "Liquid turns into gas.",
+      "level": "hard"
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "questions": [
+    {
+      "q": "What is a noun?",
+      "a": "A naming word for a person, place, animal, or thing.",
+      "level": "easy"
+    },
+    {
+      "q": "Can you give an example of a noun?",
+      "a": "Dog, teacher, city, or ball.",
+      "level": "easy"
+    },
+    {
+      "q": "What word tells us what someone is doing?",
+      "a": "A verb.",
+      "level": "easy"
+    },
+    {
+      "q": "What is an example of a verb?",
+      "a": "Run, eat, or sleep.",
+      "level": "easy"
+    },
+    {
+      "q": "What does an adjective do?",
+      "a": "Describes a noun.",
+      "level": "easy"
+    },
+    {
+      "q": "Can you name an adjective?",
+      "a": "Tall, red, or kind.",
+      "level": "easy"
+    },
+    {
+      "q": "What is a declarative sentence?",
+      "a": "A sentence that tells something.",
+      "level": "medium"
+    },
+    {
+      "q": "What type of sentence asks a question?",
+      "a": "An interrogative sentence.",
+      "level": "medium"
+    },
+    {
+      "q": "What is an imperative sentence?",
+      "a": "A sentence that gives a command.",
+      "level": "medium"
+    },
+    {
+      "q": "What do exclamatory sentences show?",
+      "a": "Strong feelings.",
+      "level": "medium"
+    },
+    {
+      "q": "What is present tense?",
+      "a": "It tells about something happening now.",
+      "level": "medium"
+    },
+    {
+      "q": "Can you change 'He went to school' into present tense?",
+      "a": "'He goes to school.'",
+      "level": "hard"
+    },
+    {
+      "q": "What does past tense tell us?",
+      "a": "About something that already happened.",
+      "level": "medium"
+    },
+    {
+      "q": "Change 'They eat lunch' into past tense.",
+      "a": "'They ate lunch.'",
+      "level": "hard"
+    },
+    {
+      "q": "What is future tense?",
+      "a": "It tells about something that will happen.",
+      "level": "medium"
+    },
+    {
+      "q": "Can you change 'We watch a movie' into future tense?",
+      "a": "'We will watch a movie.'",
+      "level": "hard"
+    },
+    {
+      "q": "What ends a sentence?",
+      "a": "A full stop (.).",
+      "level": "easy"
+    },
+    {
+      "q": "What punctuation marks shows strong feeling?",
+      "a": "An exclamation mark (!).",
+      "level": "medium"
+    },
+    {
+      "q": "What is the purpose of a comma?",
+      "a": "To separate items in a list.",
+      "level": "medium"
+    },
+    {
+      "q": "Add punctuation: Where is my book",
+      "a": "'Where is my book?'",
+      "level": "hard"
+    },
+    {
+      "q": "Add punctuation: I bought apples bananas and oranges",
+      "a": "'I bought apples, bananas, and oranges.'",
+      "level": "hard"
+    }
+  ]
+}

@@ -1,0 +1,379 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Admin - PrathamLearn</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		
+		body { 
+			font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+			background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+			min-height: 100vh;
+			padding: 20px;
+		}
+		
+		.container { 
+			max-width: 1000px; 
+			margin: 0 auto;
+			padding: 20px;
+		}
+		
+		.header {
+			background: white;
+			border-radius: 16px;
+			padding: 30px;
+			margin-bottom: 30px;
+			box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+		
+		.header h2 {
+			font-size: 2rem;
+			font-weight: 700;
+			color: #2c3e50;
+			margin: 0;
+		}
+		
+		.back-btn {
+			display: inline-flex;
+			align-items: center;
+			padding: 10px 20px;
+			background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+			color: white;
+			text-decoration: none;
+			border-radius: 8px;
+			font-weight: 500;
+			transition: all 0.3s ease;
+		}
+		
+		.back-btn:hover {
+			transform: translateY(-2px);
+			box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+		}
+		
+		.card { 
+			background: white;
+			border-radius: 16px; 
+			padding: 30px; 
+			margin: 20px 0; 
+			box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+			border: 1px solid rgba(255, 255, 255, 0.2);
+			position: relative;
+			overflow: hidden;
+		}
+		
+		.card::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			height: 4px;
+			background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+		}
+		
+		.card h3 {
+			font-size: 1.4rem;
+			font-weight: 600;
+			color: #2c3e50;
+			margin-bottom: 20px;
+			display: flex;
+			align-items: center;
+			gap: 10px;
+		}
+		
+		.form-group {
+			margin-bottom: 20px;
+		}
+		
+		label {
+			display: block;
+			font-weight: 500;
+			color: #34495e;
+			margin-bottom: 8px;
+			font-size: 0.95rem;
+		}
+		
+		input, select, textarea {
+			width: 100%;
+			max-width: 500px;
+			padding: 12px 16px;
+			border: 2px solid #e1e8ed;
+			border-radius: 8px;
+			font-size: 1rem;
+			transition: all 0.3s ease;
+			background: white;
+		}
+		
+		input:focus, select:focus, textarea:focus {
+			outline: none;
+			border-color: #667eea;
+			box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+		}
+		
+		button {
+			background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+			color: white;
+			border: none;
+			padding: 12px 24px;
+			border-radius: 8px;
+			font-size: 1rem;
+			font-weight: 500;
+			cursor: pointer;
+			transition: all 0.3s ease;
+			margin: 8px 8px 8px 0;
+		}
+		
+		button:hover:not(:disabled) {
+			transform: translateY(-2px);
+			box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+		}
+		
+		button:disabled {
+			opacity: 0.6;
+			cursor: not-allowed;
+			transform: none;
+		}
+		
+		.create-btn {
+			background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%);
+			color: #2c3e50;
+		}
+		
+		.create-btn:hover:not(:disabled) {
+			box-shadow: 0 8px 20px rgba(255, 154, 158, 0.3);
+		}
+		
+		.upload-btn {
+			background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+			color: #2c3e50;
+		}
+		
+		.upload-btn:hover:not(:disabled) {
+			box-shadow: 0 8px 20px rgba(168, 237, 234, 0.3);
+		}
+		
+		.prompt-btn {
+			background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+			color: #2c3e50;
+		}
+		
+		.prompt-btn:hover:not(:disabled) {
+			box-shadow: 0 8px 20px rgba(255, 236, 210, 0.3);
+		}
+		
+		pre { 
+			white-space: pre-wrap; 
+			background: #f8f9fa;
+			padding: 20px;
+			border-radius: 8px;
+			border: 1px solid #e9ecef;
+			font-family: 'SF Mono', Monaco, 'Cascadia Code', 'Roboto Mono', Consolas, 'Courier New', monospace;
+			font-size: 0.9rem;
+			line-height: 1.5;
+			max-height: 400px;
+			overflow-y: auto;
+		}
+		
+		.status {
+			font-weight: 500;
+			padding: 8px 16px;
+			border-radius: 6px;
+			display: inline-block;
+			margin: 10px 0;
+		}
+		
+		.status.generating {
+			background: #fff3cd;
+			color: #856404;
+		}
+		
+		.status.done {
+			background: #d4edda;
+			color: #155724;
+		}
+		
+		.status.failed {
+			background: #f8d7da;
+			color: #721c24;
+		}
+		
+		.file-input-wrapper {
+			position: relative;
+			display: inline-block;
+			margin: 10px 0;
+		}
+		
+		.file-input-wrapper input[type="file"] {
+			position: absolute;
+			opacity: 0;
+			width: 100%;
+			height: 100%;
+			cursor: pointer;
+		}
+		
+		.file-input-label {
+			display: inline-block;
+			padding: 12px 24px;
+			background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+			color: white;
+			border-radius: 8px;
+			cursor: pointer;
+			transition: all 0.3s ease;
+		}
+		
+		.file-input-label:hover {
+			transform: translateY(-2px);
+			box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+		}
+		
+		@media (max-width: 768px) {
+			.container {
+				padding: 10px;
+			}
+			
+			.header {
+				flex-direction: column;
+				gap: 20px;
+				text-align: center;
+			}
+			
+			.card {
+				padding: 20px;
+			}
+			
+			input, select, textarea {
+				max-width: 100%;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<h2>👨‍💼 Admin Portal</h2>
+			<a href="/" class="back-btn">← Back to Home</a>
+		</div>
+		
+		<div class="card">
+			<h3>📚 Create Course</h3>
+			<div class="form-group">
+				<label for="title">Course Title</label>
+				<input id="title" placeholder="Enter chapter title" />
+			</div>
+			<div class="form-group">
+				<label for="language">Language (optional: 'hi' | 'en' | 'auto')</label>
+				<input id="language" placeholder="auto" />
+			</div>
+			<button id="createBtn" class="create-btn">✨ Create Course</button>
+			<div id="courseOut"></div>
+		</div>
+
+		<div class="card">
+			<h3>📤 Upload Material</h3>
+			<div class="form-group">
+				<label for="courseIdUpload">Course ID</label>
+				<input id="courseIdUpload" placeholder="Enter course ID" />
+			</div>
+			<div class="form-group">
+				<label for="file">Upload File (PDF/Text/Image)</label>
+				<div class="file-input-wrapper">
+					<input id="file" type="file" />
+					<label for="file" class="file-input-label">📁 Choose File</label>
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="text">Or Paste Text Content</label>
+				<textarea id="text" rows="6" placeholder="Paste chapter text here..."></textarea>
+			</div>
+			<button id="uploadBtn" class="upload-btn">📤 Upload Material</button>
+			<div id="uploadOut"></div>
+		</div>
+
+		<div class="card">
+			<h3>🤖 Generate Voice Tutor System Prompt</h3>
+			<div class="form-group">
+				<label for="courseIdPrompt">Course ID</label>
+				<input id="courseIdPrompt" placeholder="Enter course ID" />
+			</div>
+			<button id="promptBtn" class="prompt-btn">⚡ Generate Prompt</button>
+			<div id="promptStatus"></div>
+			<pre id="promptOut"></pre>
+		</div>
+
+		<div class="card">
+			<h3>👁️ View Full Prompt</h3>
+			<div class="form-group">
+				<label for="courseIdView">Course ID</label>
+				<input id="courseIdView" placeholder="Enter course ID" />
+			</div>
+			<button id="viewBtn" class="btn">👀 View Prompt</button>
+			<pre id="promptFull"></pre>
+		</div>
+	</div>
+
+	<script>
+	const createBtn = document.getElementById('createBtn');
+	createBtn.onclick = async () => {
+		const title = document.getElementById('title').value.trim();
+		const language = document.getElementById('language').value.trim();
+		const res = await fetch('/api/admin/course', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ title, language }) });
+		const data = await res.json();
+		document.getElementById('courseOut').textContent = res.ok ? `Course ID: ${data.courseId}` : JSON.stringify(data);
+		document.getElementById('courseIdUpload').value = data.courseId || '';
+		document.getElementById('courseIdPrompt').value = data.courseId || '';
+		document.getElementById('courseIdView').value = data.courseId || '';
+	};
+
+	const uploadBtn = document.getElementById('uploadBtn');
+	uploadBtn.onclick = async () => {
+		const courseId = document.getElementById('courseIdUpload').value.trim();
+		const file = document.getElementById('file').files[0];
+		const text = document.getElementById('text').value;
+		const fd = new FormData();
+		if (file) fd.append('material', file);
+		if (text) fd.append('text', text);
+		const res = await fetch(`/api/admin/upload/${courseId}`, { method: 'POST', body: fd });
+		document.getElementById('uploadOut').textContent = JSON.stringify(await res.json(), null, 2);
+	};
+
+	const promptBtn = document.getElementById('promptBtn');
+	promptBtn.onclick = async () => {
+		const btn = promptBtn; 
+		btn.disabled = true; 
+		const statusEl = document.getElementById('promptStatus');
+		statusEl.textContent = 'Generating...';
+		statusEl.className = 'status generating';
+		
+		const courseId = document.getElementById('courseIdPrompt').value.trim();
+		const res = await fetch(`/api/admin/prompt/${courseId}`, { method: 'POST' });
+		const data = await res.json();
+		document.getElementById('promptOut').textContent = res.ok ? (`Preview: ${data.promptPreview || ''}\nQuestions: ${data.questionCount||0}`) : JSON.stringify(data, null, 2);
+		// auto load full prompt
+		const res2 = await fetch(`/api/admin/prompt/${courseId}`);
+		const data2 = await res2.json();
+		document.getElementById('promptFull').textContent = res2.ok ? data2.prompt : JSON.stringify(data2, null, 2);
+		
+		statusEl.textContent = res.ok ? '✅ Done' : '❌ Failed';
+		statusEl.className = res.ok ? 'status done' : 'status failed';
+		btn.disabled = false;
+	};
+
+	const viewBtn = document.getElementById('viewBtn');
+	viewBtn.onclick = async () => {
+		const courseId = document.getElementById('courseIdView').value.trim();
+		const res = await fetch(`/api/admin/prompt/${courseId}`);
+		const data = await res.json();
+		document.getElementById('promptFull').textContent = res.ok ? data.prompt : JSON.stringify(data, null, 2);
+	};
+	</script>
+</body>
+</html>

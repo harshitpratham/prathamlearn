@@ -1,0 +1,880 @@
+{
+  "sessions": {
+    "af475124-fb2d-4aed-8241-444453352ec8": {
+      "id": "af475124-fb2d-4aed-8241-444453352ec8",
+      "courseId": "b6ccdccc-f918-4e66-be80-100efdd3cc95",
+      "name": "Asha",
+      "createdAt": "2025-09-03T12:59:25.910Z",
+      "level": "medium",
+      "history": [
+        {
+          "q": "",
+          "a": "Explains how plants make food."
+        }
+      ],
+      "score": 1,
+      "total": 1
+    },
+    "f792d6d0-fee1-4e85-a251-b9b1a33e3ee5": {
+      "id": "f792d6d0-fee1-4e85-a251-b9b1a33e3ee5",
+      "courseId": "bc30ec16-3ffa-4dd7-9ad4-cb7bf8f75dfb",
+      "name": "Learner",
+      "createdAt": "2025-09-03T12:59:25.917Z",
+      "level": "easy",
+      "history": [],
+      "score": 0,
+      "total": 0
+    },
+    "a2a6e0ab-ea9c-4d8d-beb1-332c964aca18": {
+      "id": "a2a6e0ab-ea9c-4d8d-beb1-332c964aca18",
+      "courseId": "a2a2c1fa-ed7f-40cb-af42-488b54d8d3f2",
+      "name": "harshit",
+      "createdAt": "2025-09-04T05:21:36.719Z",
+      "level": "easy",
+      "history": [
+        {
+          "q": "",
+          "a": "{\"type\":\"output_audio_buffer.started\",\"event_id\":\"event_5ed28e1ba58f4863\",\"response_id\":\"resp_CBwhg9E3h6qUZg9GBL9DY\"}"
+        },
+        {
+          "q": "",
+          "a": "{\"type\":\"rate_limits.updated\",\"event_id\":\"event_CBwhiGXgTHnf0COMyDnAC\",\"rate_limits\":[{\"name\":\"tokens\",\"limit\":4000000,\"remaining\":3999371,\"reset_seconds\":0.009}]}"
+        },
+        {
+          "q": "",
+          "a": "{\"type\":\"output_audio_buffer.stopped\",\"event_id\":\"event_e93234b7acd845b3\",\"response_id\":\"resp_CBwhg9E3h6qUZg9GBL9DY\"}"
+        },
+        {
+          "q": "",
+          "a": "{\"type\":\"input_audio_buffer.speech_stopped\",\"event_id\":\"event_CBwhs5sVLlC1mhfxVBja4\",\"audio_end_ms\":12160,\"item_id\":\"item_CBwhrVp7DIiknixnnX9KZ\"}"
+        },
+        {
+          "q": "",
+          "a": "{\"type\":\"rate_limits.updated\",\"event_id\":\"event_CBwhuFplPY6zQmQstsHlN\",\"rate_limits\":[{\"name\":\"tokens\",\"limit\":4000000,\"remaining\":3999434,\"reset_seconds\":0.008}]}"
+        },
+        {
+          "q": "",
+          "a": "{\"type\":\"output_audio_buffer.stopped\",\"event_id\":\"event_0f132812f93b4fc3\",\"response_id\":\"resp_CBwhsxR2gTVRrjsTaxQDJ\"}"
+        },
+        {
+          "q": "",
+          "a": "{\"type\":\"output_audio_buffer.started\",\"event_id\":\"event_0347f54a1f964ae2\",\"response_id\":\"resp_CBwi2QvMLR54KaDsuvAsV\"}"
+        },
+        {
+          "q": "",
+          "a": "{\"type\":\"response.audio.done\",\"event_id\":\"event_CBwi5S1n90yJT4Ri9xaqF\",\"response_id\":\"resp_CBwi2QvMLR54KaDsuvAsV\",\"item_id\":\"item_CBwi2ZV0F1dWIl8p3PaOc\",\"output_index\":0,\"content_index\":0}"
+        },
+        {
+          "q": "",
+          "a": "{\"type\":\"output_audio_buffer.stopped\",\"event_id\":\"event_664e717f535d4fad\",\"response_id\":\"resp_CBwi2QvMLR54KaDsuvAsV\"}"
+        },
+        {
+          "q": "",
+          "a": "{\"type\":\"input_audio_buffer.speech_stopped\",\"event_id\":\"event_CBwiJHOy78KqwZx9UdDuH\",\"audio_end_ms\":38720,\"item_id\":\"item_CBwiIqgovBgd2CkV8a6bs\"}"
+        },
+        {
+          "q": "",
+          "a": "{\"type\":\"rate_limits.updated\",\"event_id\":\"event_CBwiLkmY1Vh9TSTajR1I1\",\"rate_limits\":[{\"name\":\"tokens\",\"limit\":4000000,\"remaining\":3999361,\"reset_seconds\":0.009}]}"
+        },
+        {
+          "q": "",
+          "a": "{\"type\":\"conversation.item.truncated\",\"event_id\":\"event_CBwiSuAZ2EjuV7n2esmg9\",\"item_id\":\"item_CBwiJYDFJdPhMLMsJ2r6I\",\"content_index\":0,\"audio_end_ms\":9140}"
+        },
+        {
+          "q": "",
+          "a": "{\"type\":\"output_audio_buffer.started\",\"event_id\":\"event_47ea4aa753f84e73\",\"response_id\":\"resp_CBwiTtQQb7luKkj2UoZgj\"}"
+        },
+        {
+          "q": "",
+          "a": "{\"type\":\"rate_limits.updated\",\"event_id\":\"event_CBwiVhHkKol32ccCcHVpq\",\"rate_limits\":[{\"name\":\"tokens\",\"limit\":4000000,\"remaining\":3999429,\"reset_seconds\":0.008}]}"
+        },
+        {
+          "q": "",
+          "a": "{\"type\":\"input_audio_buffer.committed\",\"event_id\":\"event_CBwibu152MF1MG7PaUFoR\",\"previous_item_id\":\"item_CBwiT2TinvSyDGR0eBqAq\",\"item_id\":\"item_CBwib5Ivq8dy9oODEefki\"}"
+        },
+        {
+          "q": "",
+          "a": "{\"type\":\"rate_limits.updated\",\"event_id\":\"event_CBwidP7B2Fmwwoqi613tI\",\"rate_limits\":[{\"name\":\"tokens\",\"limit\":4000000,\"remaining\":3999404,\"reset_seconds\":0.008}]}"
+        },
+        {
+          "q": "",
+          "a": "{\"type\":\"output_audio_buffer.stopped\",\"event_id\":\"event_0fbb9bbf1cf64cea\",\"response_id\":\"resp_CBwib3FCi2RCphsVQhmuj\"}"
+        },
+        {
+          "q": "",
+          "a": "{\"type\":\"input_audio_buffer.speech_started\",\"event_id\":\"event_CBwx7jzkimCpuDSkT9YVB\",\"audio_start_ms\":950388,\"item_id\":\"item_CBwx7njGSZ2I5ZRNGdzSG\"}"
+        },
+        {
+          "q": "",
+          "a": "{\"type\":\"output_audio_buffer.started\",\"event_id\":\"event_a409210af9f945b4\",\"response_id\":\"resp_CBwx8r8qhtreAayuMgSrK\"}"
+        },
+        {
+          "q": "",
+          "a": "{\"type\":\"response.audio.done\",\"event_id\":\"event_CBwxEpca7m5oi0spsQIrZ\",\"response_id\":\"resp_CBwx8r8qhtreAayuMgSrK\",\"item_id\":\"item_CBwx8pZ2SnDLOFrUf2VI3\",\"output_index\":0,\"content_index\":0}"
+        }
+      ],
+      "score": 0,
+      "total": 20
+    },
+    "e630dedd-2dab-46a1-9193-fd3037264f92": {
+      "id": "e630dedd-2dab-46a1-9193-fd3037264f92",
+      "courseId": "a2a2c1fa-ed7f-40cb-af42-488b54d8d3f2",
+      "name": "harshit",
+      "createdAt": "2025-09-04T06:01:33.387Z",
+      "level": "easy",
+      "history": [],
+      "score": 0,
+      "total": 0
+    },
+    "4819f5ff-0a71-4dbe-b2ce-8c88e88faef4": {
+      "id": "4819f5ff-0a71-4dbe-b2ce-8c88e88faef4",
+      "courseId": "a2a2c1fa-ed7f-40cb-af42-488b54d8d3f2",
+      "name": "harshit",
+      "createdAt": "2025-09-04T06:06:47.224Z",
+      "level": "easy",
+      "history": [],
+      "score": 0,
+      "total": 0
+    },
+    "f3f7cb64-bcd2-4c49-92a5-c6e6363243d4": {
+      "id": "f3f7cb64-bcd2-4c49-92a5-c6e6363243d4",
+      "courseId": "a2a2c1fa-ed7f-40cb-af42-488b54d8d3f2",
+      "name": "harshit",
+      "createdAt": "2025-09-04T06:15:08.064Z",
+      "level": "easy",
+      "history": [],
+      "score": 0,
+      "total": 0
+    },
+    "57546bc2-a565-425f-b30b-eca2ead52428": {
+      "id": "57546bc2-a565-425f-b30b-eca2ead52428",
+      "courseId": "a2a2c1fa-ed7f-40cb-af42-488b54d8d3f2",
+      "name": "harshit",
+      "createdAt": "2025-09-04T06:16:00.164Z",
+      "level": "easy",
+      "history": [],
+      "score": 0,
+      "total": 0
+    },
+    "dae36182-ea39-43e2-b003-2ce67c0514ca": {
+      "id": "dae36182-ea39-43e2-b003-2ce67c0514ca",
+      "courseId": "a2a2c1fa-ed7f-40cb-af42-488b54d8d3f2",
+      "name": "harshit",
+      "createdAt": "2025-09-04T06:25:44.969Z",
+      "level": "easy",
+      "history": [],
+      "score": 0,
+      "total": 0
+    },
+    "7de9a303-3b6b-4853-a1d8-5b98fa506065": {
+      "id": "7de9a303-3b6b-4853-a1d8-5b98fa506065",
+      "courseId": "1c862b57-cf42-4712-94a3-4a6a631d4158",
+      "name": "harshit",
+      "createdAt": "2025-09-04T06:47:46.197Z",
+      "level": "easy",
+      "history": [],
+      "score": 0,
+      "total": 0
+    },
+    "b5b5b254-3be8-495f-a180-393fb26c7047": {
+      "id": "b5b5b254-3be8-495f-a180-393fb26c7047",
+      "courseId": "39ee1ad7-0c48-4b12-94ee-b99e036b6b9d",
+      "name": "harshit",
+      "createdAt": "2025-09-04T07:10:18.107Z",
+      "level": "easy",
+      "history": [],
+      "score": 0,
+      "total": 0
+    },
+    "ebf738a5-fcdc-4320-ac63-6c8c395359cb": {
+      "id": "ebf738a5-fcdc-4320-ac63-6c8c395359cb",
+      "courseId": "f2fbb654-bf39-434d-aacd-0a4e517c67e6",
+      "name": "harshit",
+      "createdAt": "2025-09-04T07:16:49.839Z",
+      "level": "easy",
+      "history": [
+        {
+          "q": "What is science?",
+          "a": "v=0",
+          "correct": false,
+          "feedback": "Let's try another way."
+        },
+        {
+          "q": "What do we do first in the scientific method?",
+          "a": "Let's",
+          "correct": false,
+          "feedback": "Let's try another way."
+        },
+        {
+          "q": "What is matter?",
+          "a": "What",
+          "correct": false,
+          "feedback": "Let's try another way."
+        },
+        {
+          "q": "What shape does a solid have?",
+          "a": "is",
+          "correct": false,
+          "feedback": "Let's try another way."
+        },
+        {
+          "q": "What does a liquid do?",
+          "a": "What",
+          "correct": false,
+          "feedback": "Let's try another way."
+        }
+      ],
+      "score": 0,
+      "total": 5
+    },
+    "3b3da7b5-1f2a-478a-8d8d-5eb977debd5b": {
+      "id": "3b3da7b5-1f2a-478a-8d8d-5eb977debd5b",
+      "courseId": "39ee1ad7-0c48-4b12-94ee-b99e036b6b9d",
+      "name": "harshit",
+      "createdAt": "2025-09-04T07:20:01.916Z",
+      "level": "easy",
+      "history": [
+        {
+          "q": "What is science?",
+          "a": "v=0",
+          "correct": false,
+          "feedback": "Let's try another way."
+        },
+        {
+          "q": "Why do we use the scientific method?",
+          "a": "No",
+          "correct": false,
+          "feedback": "Let's try another way."
+        },
+        {
+          "q": "What is matter?",
+          "a": "स्टॉडियोफ मैटर",
+          "correct": false,
+          "feedback": "Let's try another way."
+        },
+        {
+          "q": "Name a state of matter.",
+          "a": "Gravity",
+          "correct": false,
+          "feedback": "Let's try another way."
+        },
+        {
+          "q": "What does ice turn into when heated?",
+          "a": "photosynthesis",
+          "correct": false,
+          "feedback": "Let's try another way."
+        }
+      ],
+      "score": 0,
+      "total": 5
+    },
+    "4e51c734-b0d6-47ff-b6a4-cd198e7f4f7f": {
+      "id": "4e51c734-b0d6-47ff-b6a4-cd198e7f4f7f",
+      "courseId": "84e2f278-a5d7-42f1-b7de-205596d0a480",
+      "name": "harshit",
+      "createdAt": "2025-09-04T07:40:17.688Z",
+      "level": "Beginner",
+      "history": [
+        {
+          "q": "What is science?",
+          "a": "[not provided in the transcript]",
+          "correct": false,
+          "feedback": "The answer was not provided, but science generally refers to studying the natural world."
+        },
+        {
+          "q": "What do we call a guess in science?",
+          "a": "[not provided in the transcript]",
+          "correct": false,
+          "feedback": "The answer was not provided, but a guess in science is called a hypothesis."
+        },
+        {
+          "q": "What is matter?",
+          "a": "[not provided in the transcript]",
+          "correct": false,
+          "feedback": "The answer was not provided, but matter is anything with mass that takes up space."
+        },
+        {
+          "q": "What state of matter is ice?",
+          "a": "[not provided in the transcript]",
+          "correct": false,
+          "feedback": "The answer was not provided, but ice is a solid."
+        },
+        {
+          "q": "What do plants use to make food?",
+          "a": "[not provided in the transcript]",
+          "correct": false,
+          "feedback": "The answer was not provided, but plants use sunlight to make food."
+        }
+      ],
+      "score": 0,
+      "total": 5
+    },
+    "a23f02aa-6362-4f38-95ab-c40fd2c52f88": {
+      "id": "a23f02aa-6362-4f38-95ab-c40fd2c52f88",
+      "courseId": "84e2f278-a5d7-42f1-b7de-205596d0a480",
+      "name": "harshit",
+      "createdAt": "2025-09-04T07:43:25.792Z",
+      "level": "Beginner",
+      "history": [
+        {
+          "q": "What do we call a guess in science?",
+          "a": "Okay guess in science?Okay. What happens to ice in the sun?",
+          "correct": false,
+          "feedback": "The user did not clearly state 'hypothesis', which is the expected answer."
+        },
+        {
+          "q": "What happens to ice in the sun?",
+          "a": "It melts.",
+          "correct": true,
+          "feedback": "Correct! Ice melts when exposed to sunlight."
+        },
+        {
+          "q": "What pulls objects down to the ground?",
+          "a": "Alright. What",
+          "correct": false,
+          "feedback": "The user did not provide an answer to this question."
+        },
+        {
+          "q": "What is matter?",
+          "a": "I don't know.",
+          "correct": false,
+          "feedback": "The user did not provide an answer. Matter is defined as anything with mass that takes up space."
+        }
+      ],
+      "score": 1,
+      "total": 4
+    },
+    "2938b0df-f6b0-48c4-9d41-6a5b31032ee6": {
+      "id": "2938b0df-f6b0-48c4-9d41-6a5b31032ee6",
+      "courseId": "84e2f278-a5d7-42f1-b7de-205596d0a480",
+      "name": "harshit",
+      "createdAt": "2025-09-04T07:55:20.825Z",
+      "level": "Beginner",
+      "history": [
+        {
+          "q": "What do we call a guess in science?",
+          "a": "I don't know.",
+          "correct": false,
+          "feedback": "The correct answer is 'A hypothesis.' Don't worry, it's okay not to know!"
+        },
+        {
+          "q": "What state of matter is water?",
+          "a": "Hypothesis",
+          "correct": false,
+          "feedback": "The correct answer is 'Liquid.' A hypothesis refers to a guess in science, not a state of matter."
+        },
+        {
+          "q": "What is friction?",
+          "a": "liquid.",
+          "correct": false,
+          "feedback": "The correct answer is 'It slows things down when they rub together.' Liquid is a state of matter, but not related to friction."
+        },
+        {
+          "q": "How long does sunlight take to reach Earth?",
+          "a": "8 minutes.",
+          "correct": true,
+          "feedback": "Great job! Sunlight takes about 8 minutes to reach Earth."
+        }
+      ],
+      "score": 1,
+      "total": 4
+    },
+    "ea9530ab-ed57-40b8-86c5-b93308fe1d9d": {
+      "id": "ea9530ab-ed57-40b8-86c5-b93308fe1d9d",
+      "courseId": "84e2f278-a5d7-42f1-b7de-205596d0a480",
+      "name": "harshit",
+      "createdAt": "2025-09-04T08:01:37.159Z",
+      "level": "Beginner",
+      "history": [
+        {
+          "q": "What state of matter is ice?",
+          "a": "solid",
+          "correct": true,
+          "feedback": "That's correct! Ice is a solid."
+        },
+        {
+          "q": "What makes things move?",
+          "a": "solid",
+          "correct": false,
+          "feedback": "The correct answer is energy. Energy is what makes things move."
+        },
+        {
+          "q": "What helps us breathe?",
+          "a": "I don't know.",
+          "correct": false,
+          "feedback": "That's okay! The answer is oxygen, which is found in the air we breathe."
+        },
+        {
+          "q": "What happens to water when it heats up?",
+          "a": "I don't know.",
+          "correct": false,
+          "feedback": "No problem! When water heats up, it turns into steam or vapor. It's a process called evaporation."
+        }
+      ],
+      "score": 1,
+      "total": 4
+    },
+    "9d83e533-2b53-4661-bc60-11dafb993225": {
+      "id": "9d83e533-2b53-4661-bc60-11dafb993225",
+      "courseId": "84e2f278-a5d7-42f1-b7de-205596d0a480",
+      "name": "harshit",
+      "createdAt": "2025-09-04T08:18:16.371Z",
+      "level": "easy",
+      "history": [],
+      "score": 0,
+      "total": 0
+    },
+    "e0f256c0-8518-4bf0-b61b-0df3909c70da": {
+      "id": "e0f256c0-8518-4bf0-b61b-0df3909c70da",
+      "courseId": "84e2f278-a5d7-42f1-b7de-205596d0a480",
+      "name": "harshit",
+      "createdAt": "2025-09-04T08:22:28.707Z",
+      "level": "Beginner",
+      "history": [
+        {
+          "q": "What is science?",
+          "a": "You",
+          "correct": false,
+          "feedback": "The answer should explain that science is the study of the natural world."
+        },
+        {
+          "q": "What do we call a guess in science?",
+          "a": "I don't know",
+          "correct": false,
+          "feedback": "It's okay not to know! In science, we call a guess a hypothesis."
+        },
+        {
+          "q": "What is matter?",
+          "a": "Hypothesis.",
+          "correct": false,
+          "feedback": "A hypothesis is not matter; matter is anything that has mass and takes up space."
+        },
+        {
+          "q": "What state of matter is water?",
+          "a": "which has a mass.",
+          "correct": false,
+          "feedback": "While water does have mass, the correct answer is that water is in a liquid state."
+        },
+        {
+          "q": "What makes things move?",
+          "a": "I don't know.",
+          "correct": false,
+          "feedback": "That's alright! Things move due to energy."
+        }
+      ],
+      "score": 0,
+      "total": 5
+    },
+    "570205b3-117d-48f8-ae6e-e97557b8dab2": {
+      "id": "570205b3-117d-48f8-ae6e-e97557b8dab2",
+      "courseId": "84e2f278-a5d7-42f1-b7de-205596d0a480",
+      "name": "harshit",
+      "createdAt": "2025-09-04T08:25:40.515Z",
+      "level": "Beginner",
+      "history": [
+        {
+          "q": "What is science?",
+          "a": "MBC 뉴스 이덕영입니다.",
+          "correct": false,
+          "feedback": "The answer does not address the question. Science involves studying the natural world."
+        },
+        {
+          "q": "What state of matter is water?",
+          "a": "Liquid.",
+          "correct": true,
+          "feedback": "Correct! Water is indeed in the liquid state."
+        },
+        {
+          "q": "What pulls objects down to the ground?",
+          "a": "I don't know.",
+          "correct": false,
+          "feedback": "That's okay! The answer is gravity, which pulls things down towards the Earth."
+        }
+      ],
+      "score": 1,
+      "total": 3
+    },
+    "875f3813-41ea-4eeb-9440-4449cdbc6df4": {
+      "id": "875f3813-41ea-4eeb-9440-4449cdbc6df4",
+      "courseId": "84e2f278-a5d7-42f1-b7de-205596d0a480",
+      "name": "harshit",
+      "createdAt": "2025-09-04T08:27:40.241Z",
+      "level": "Beginner",
+      "history": [
+        {
+          "q": "What do we call a guess in science?",
+          "a": "고맙습니다.",
+          "correct": false,
+          "feedback": "The correct answer is 'A hypothesis.'"
+        },
+        {
+          "q": "What is matter?",
+          "a": "Thank you.",
+          "correct": false,
+          "feedback": "The correct answer is 'Anything with mass and takes up space.'"
+        },
+        {
+          "q": "What state of matter is ice?",
+          "a": "I don't know.",
+          "correct": false,
+          "feedback": "That's okay! The correct answer is 'Solid.'"
+        },
+        {
+          "q": "What state of matter is water?",
+          "a": "I don't know.",
+          "correct": false,
+          "feedback": "No worries! The correct answer is 'Liquid.'"
+        }
+      ],
+      "score": 0,
+      "total": 4
+    },
+    "712d58bc-5afc-432b-9c20-577919777ca4": {
+      "id": "712d58bc-5afc-432b-9c20-577919777ca4",
+      "courseId": "84e2f278-a5d7-42f1-b7de-205596d0a480",
+      "name": "harshit",
+      "createdAt": "2025-09-04T08:37:58.306Z",
+      "level": "Intermediate",
+      "history": [
+        {
+          "q": "What do we call a guess in science?",
+          "a": "Hypothesis.",
+          "correct": true,
+          "feedback": "That's correct! A guess in science is known as a hypothesis."
+        },
+        {
+          "q": "What is matter?",
+          "a": "I don't know.",
+          "correct": false,
+          "feedback": "That's okay! Matter is anything with mass that takes up space."
+        },
+        {
+          "q": "What state of matter is ice?",
+          "a": "solid.",
+          "correct": true,
+          "feedback": "Correct! Ice is indeed a solid."
+        },
+        {
+          "q": "What state of matter is water?",
+          "a": "Next",
+          "correct": false,
+          "feedback": "I understand you're ready for the next question, but the answer is liquid."
+        }
+      ],
+      "score": 2,
+      "total": 4
+    },
+    "7e1fa328-3229-4c81-b43f-57d24e93d941": {
+      "id": "7e1fa328-3229-4c81-b43f-57d24e93d941",
+      "courseId": "84e2f278-a5d7-42f1-b7de-205596d0a480",
+      "name": "harshit",
+      "createdAt": "2025-09-04T08:42:06.095Z",
+      "level": "easy",
+      "history": [],
+      "score": 0,
+      "total": 0
+    },
+    "e23272b4-2362-4528-bf87-a3b971def9e8": {
+      "id": "e23272b4-2362-4528-bf87-a3b971def9e8",
+      "courseId": "84e2f278-a5d7-42f1-b7de-205596d0a480",
+      "name": "harshit",
+      "createdAt": "2025-09-04T08:47:48.068Z",
+      "level": "easy",
+      "history": [],
+      "score": 0,
+      "total": 0
+    },
+    "299675fa-ec54-4c69-ad6d-ebfb697fccc4": {
+      "id": "299675fa-ec54-4c69-ad6d-ebfb697fccc4",
+      "courseId": "84e2f278-a5d7-42f1-b7de-205596d0a480",
+      "name": "harshit",
+      "createdAt": "2025-09-04T09:06:36.347Z",
+      "level": "easy",
+      "history": [],
+      "score": 0,
+      "total": 0
+    },
+    "b6b71821-0ed0-4ee7-aa9a-f34f2cf39479": {
+      "id": "b6b71821-0ed0-4ee7-aa9a-f34f2cf39479",
+      "courseId": "84e2f278-a5d7-42f1-b7de-205596d0a480",
+      "name": "harshit",
+      "createdAt": "2025-09-04T09:09:56.802Z",
+      "level": "easy",
+      "history": [],
+      "score": 0,
+      "total": 0
+    },
+    "9c143492-043f-4a4e-91a2-b454afa73009": {
+      "id": "9c143492-043f-4a4e-91a2-b454afa73009",
+      "courseId": "84e2f278-a5d7-42f1-b7de-205596d0a480",
+      "name": "harshit",
+      "createdAt": "2025-09-04T09:17:07.981Z",
+      "level": "Beginner",
+      "history": [
+        {
+          "q": "What do we call a guess in science?",
+          "a": "oxygen",
+          "correct": false,
+          "feedback": "The correct answer is 'A hypothesis.' Oxygen is a gas in the atmosphere, not a scientific guess."
+        },
+        {
+          "q": "What is matter?",
+          "a": "hypotetes",
+          "correct": false,
+          "feedback": "The correct answer is 'Anything with mass and takes up space.' The answer provided is a misspelling of 'hypothesis.'"
+        },
+        {
+          "q": "What state of matter is water?",
+          "a": "Liquid.",
+          "correct": true,
+          "feedback": "Correct! Water is indeed a liquid."
+        }
+      ],
+      "score": 1,
+      "total": 3
+    },
+    "9e08508f-e768-46e8-918f-673f48a457e4": {
+      "id": "9e08508f-e768-46e8-918f-673f48a457e4",
+      "courseId": "84e2f278-a5d7-42f1-b7de-205596d0a480",
+      "name": "harshit",
+      "createdAt": "2025-09-04T09:22:17.591Z",
+      "level": "Beginner",
+      "history": [
+        {
+          "q": "What do we call a guess in science?",
+          "a": "Hi both of this",
+          "correct": false,
+          "feedback": "The correct answer is 'A hypothesis.'"
+        },
+        {
+          "q": "What is matter?",
+          "a": "anything that has mass.",
+          "correct": true,
+          "feedback": "This is partially correct; matter is defined as anything with mass and takes up space."
+        },
+        {
+          "q": "What state of matter is ice?",
+          "a": "Liquid.",
+          "correct": false,
+          "feedback": "The correct answer is 'Solid.' Ice is a solid state of matter."
+        },
+        {
+          "q": "What happens to ice in the sun?",
+          "a": "it makes.",
+          "correct": false,
+          "feedback": "The expected answer is 'It melts.' This response doesn't provide the correct information."
+        }
+      ],
+      "score": 1,
+      "total": 4
+    },
+    "f8fb5d61-6b52-4396-8b89-a4c3bdcee915": {
+      "id": "f8fb5d61-6b52-4396-8b89-a4c3bdcee915",
+      "courseId": "f5d46819-8343-431b-94f8-f4420460c18c",
+      "name": "harshit",
+      "createdAt": "2025-09-04T11:57:51.898Z",
+      "level": "Beginner",
+      "history": [
+        {
+          "q": "What is a noun?",
+          "a": "A noun is something which is a name, place, animal, thing.",
+          "correct": true,
+          "feedback": "The user provided a correct explanation of a noun, highlighting it as a naming word."
+        },
+        {
+          "q": "Give an example of a noun.",
+          "a": "car",
+          "correct": false,
+          "feedback": "While 'car' is a noun, the answer was not as comprehensive as expected. More examples such as 'dog' or 'city' would have been ideal."
+        },
+        {
+          "q": "What is a verb?",
+          "a": "Action.",
+          "correct": true,
+          "feedback": "The user identified that a verb relates to action, which is a correct understanding."
+        },
+        {
+          "q": "Give an example of a verb.",
+          "a": "Cao.",
+          "correct": false,
+          "feedback": "'Cao' is not recognized as an example of a verb. Acceptable examples would include 'run' or 'jump'."
+        },
+        {
+          "q": "What does an adjective do?",
+          "a": "I don't know.",
+          "correct": false,
+          "feedback": "It's okay not to know! An adjective describes a noun."
+        }
+      ],
+      "score": 2,
+      "total": 5
+    },
+    "380881f1-3080-41ea-8e6a-d5a10cf22387": {
+      "id": "380881f1-3080-41ea-8e6a-d5a10cf22387",
+      "courseId": "f5d46819-8343-431b-94f8-f4420460c18c",
+      "name": "harshit",
+      "createdAt": "2025-09-04T13:07:34.928Z",
+      "level": "Intermediate",
+      "history": [
+        {
+          "q": "What is a noun?",
+          "a": "I don't know.",
+          "correct": false,
+          "feedback": "A noun is a naming word. It's okay not to know, keep practicing!"
+        },
+        {
+          "q": "Give an example of a noun.",
+          "a": "Now, name, place, animal, thing.",
+          "correct": true,
+          "feedback": "Those are all categories of nouns, great job!"
+        },
+        {
+          "q": "What is a verb?",
+          "a": "cow",
+          "correct": false,
+          "feedback": "A verb is an action word. 'Cow' is a noun, keep trying!"
+        },
+        {
+          "q": "Give an example of a verb.",
+          "a": "Action.",
+          "correct": true,
+          "feedback": "This is a good description of a verb. Verbs are indeed action words!"
+        }
+      ],
+      "score": 2,
+      "total": 4
+    },
+    "0bd3ad63-8ed1-48f9-912d-7d6bc8284fd4": {
+      "id": "0bd3ad63-8ed1-48f9-912d-7d6bc8284fd4",
+      "courseId": "f5d46819-8343-431b-94f8-f4420460c18c",
+      "name": "Learner",
+      "createdAt": "2025-09-04T14:02:21.316Z",
+      "level": "Beginner",
+      "history": [
+        {
+          "q": "What is a noun?",
+          "a": "but",
+          "correct": false,
+          "feedback": "The answer does not explain what a noun is. A correct response would define it as 'a naming word.'"
+        }
+      ],
+      "score": 0,
+      "total": 1
+    },
+    "d7775633-be41-4bd7-ae76-394bcaa13ac5": {
+      "id": "d7775633-be41-4bd7-ae76-394bcaa13ac5",
+      "courseId": "157ac970-2696-4c29-ae85-7896802fd44c",
+      "name": "harshit",
+      "createdAt": "2025-09-04T14:08:10.054Z",
+      "level": "Beginner",
+      "history": [
+        {
+          "q": "What does a verb do?",
+          "a": "Yep.",
+          "correct": false,
+          "feedback": "The answer is incomplete; it should explain that a verb shows an action."
+        },
+        {
+          "q": "What is an adjective?",
+          "a": "Action.",
+          "correct": false,
+          "feedback": "An adjective describes a noun, while 'Action' is related to verbs."
+        },
+        {
+          "q": "What type of sentence tells something?",
+          "a": "I don't know.",
+          "correct": false,
+          "feedback": "The correct answer is 'declarative'. Don't worry, keep trying!"
+        }
+      ],
+      "score": 0,
+      "total": 3
+    },
+    "a75a3814-039c-4365-b546-343d26f12259": {
+      "id": "a75a3814-039c-4365-b546-343d26f12259",
+      "courseId": "4112da6b-54d2-455c-8df5-369b5fd5630e",
+      "name": "harshit",
+      "createdAt": "2025-09-06T04:03:02.788Z",
+      "level": "easy",
+      "history": [],
+      "score": 0,
+      "total": 0
+    },
+    "54385f25-a0a9-44ae-8e7e-820618545cba": {
+      "id": "54385f25-a0a9-44ae-8e7e-820618545cba",
+      "courseId": "f3b853ed-4952-47b5-aea8-43ec6b0bfbb0",
+      "name": "harshit",
+      "createdAt": "2025-09-09T11:21:25.612Z",
+      "level": "Beginner",
+      "history": [
+        {
+          "q": "What is a noun?",
+          "a": "photosynthesis",
+          "correct": false,
+          "feedback": "Photosynthesis is a process, while a noun is a naming word. This answer does not match the definition of a noun."
+        },
+        {
+          "q": "Give an example of a noun.",
+          "a": "Name, Place, Animal, Thing",
+          "correct": true,
+          "feedback": "Correct! These are all examples of nouns as they represent people, locations, animals, and objects."
+        },
+        {
+          "q": "What does a verb do?",
+          "a": "Car.",
+          "correct": false,
+          "feedback": "A car is a noun, not a verb. Verbs denote actions. The correct answer would be something like 'shows action.'"
+        },
+        {
+          "q": "Give an example of a verb.",
+          "a": "does an action.",
+          "correct": true,
+          "feedback": "Correct! This describes what a verb does; however, a specific example of a verb would be something like 'run' or 'jump.'"
+        },
+        {
+          "q": "What is an adjective?",
+          "a": "I don't know.",
+          "correct": false,
+          "feedback": "That's okay! An adjective is a word that describes a noun. Keep trying!"
+        }
+      ],
+      "score": 2,
+      "total": 5
+    },
+    "2e132556-ca34-494e-99fc-5a29dc053f40": {
+      "id": "2e132556-ca34-494e-99fc-5a29dc053f40",
+      "courseId": "06da32e5-1871-43d3-9251-d8bae65d04a8",
+      "name": "harshit",
+      "createdAt": "2025-09-09T11:40:13.703Z",
+      "level": "Intermediate",
+      "history": [
+        {
+          "q": "What is a noun?",
+          "a": "name, place, animal, thing.",
+          "correct": true,
+          "feedback": "This is a good explanation of a noun, covering the main categories."
+        },
+        {
+          "q": "Give an example of a noun.",
+          "a": "that acts.",
+          "correct": false,
+          "feedback": "The answer provided seems more related to a verb. A noun example could be 'dog' or 'city'."
+        },
+        {
+          "q": "What is a verb?",
+          "a": "kar.",
+          "correct": false,
+          "feedback": "This answer does not accurately define a verb. A verb is an action word."
+        },
+        {
+          "q": "Give an example of a verb.",
+          "a": "that acts.",
+          "correct": true,
+          "feedback": "While not a specific example, the phrase 'that acts' aligns with the definition of a verb, as verbs represent actions."
+        }
+      ],
+      "score": 2,
+      "total": 4
+    }
+  }
+}

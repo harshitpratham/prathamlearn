@@ -1,0 +1,114 @@
+{
+  "questions": [
+    {
+      "q": "What is science?",
+      "a": "The study of the natural world.",
+      "level": "easy"
+    },
+    {
+      "q": "What does a hypothesis mean?",
+      "a": "It's a guess to answer a question.",
+      "level": "easy"
+    },
+    {
+      "q": "What state of matter is ice?",
+      "a": "Solid",
+      "level": "easy"
+    },
+    {
+      "q": "What do we call anything that takes up space?",
+      "a": "Matter",
+      "level": "easy"
+    },
+    {
+      "q": "What happens to ice in the sun?",
+      "a": "It melts.",
+      "level": "easy"
+    },
+    {
+      "q": "Name one force that makes things move.",
+      "a": "Push or pull.",
+      "level": "easy"
+    },
+    {
+      "q": "What is photosynthesis?",
+      "a": "How plants make food using sunlight.",
+      "level": "medium"
+    },
+    {
+      "q": "What are the three states of matter?",
+      "a": "Solid, liquid, gas.",
+      "level": "medium"
+    },
+    {
+      "q": "What keeps us on the ground?",
+      "a": "Gravity.",
+      "level": "medium"
+    },
+    {
+      "q": "What system helps us breathe?",
+      "a": "Respiratory system.",
+      "level": "medium"
+    },
+    {
+      "q": "What does the circulatory system do?",
+      "a": "Pumps blood.",
+      "level": "medium"
+    },
+    {
+      "q": "How does water become a cloud?",
+      "a": "Through evaporation.",
+      "level": "medium"
+    },
+    {
+      "q": "What are living things made of?",
+      "a": "Cells.",
+      "level": "medium"
+    },
+    {
+      "q": "What is the water cycle?",
+      "a": "The repeating process of evaporation and rain.",
+      "level": "hard"
+    },
+    {
+      "q": "How long does sunlight take to reach Earth?",
+      "a": "8 minutes.",
+      "level": "hard"
+    },
+    {
+      "q": "What type of energy comes from the sun?",
+      "a": "Light energy.",
+      "level": "hard"
+    },
+    {
+      "q": "What is the purpose of an experiment?",
+      "a": "To test a hypothesis.",
+      "level": "hard"
+    },
+    {
+      "q": "What causes friction?",
+      "a": "When things rub together.",
+      "level": "hard"
+    },
+    {
+      "q": "What orbits the Earth?",
+      "a": "The Moon.",
+      "level": "hard"
+    },
+    {
+      "q": "What do animals need to survive?",
+      "a": "Food.",
+      "level": "hard"
+    },
+    {
+      "q": "What happens to water when it heats up?",
+      "a": "It can turn into steam.",
+      "level": "hard"
+    },
+    {
+      "q": "Name one part of the human body.",
+      "a": "Heart.",
+      "level": "hard"
+    }
+  ]
+}

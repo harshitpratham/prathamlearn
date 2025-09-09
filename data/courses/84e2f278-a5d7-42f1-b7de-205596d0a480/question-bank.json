@@ -1,0 +1,109 @@
+{
+  "questions": [
+    {
+      "q": "What is science?",
+      "a": "Science is studying the natural world.",
+      "level": "easy"
+    },
+    {
+      "q": "What do we call a guess in science?",
+      "a": "A hypothesis.",
+      "level": "easy"
+    },
+    {
+      "q": "What is matter?",
+      "a": "Anything with mass and takes up space.",
+      "level": "easy"
+    },
+    {
+      "q": "What state of matter is ice?",
+      "a": "Solid.",
+      "level": "easy"
+    },
+    {
+      "q": "What state of matter is water?",
+      "a": "Liquid.",
+      "level": "easy"
+    },
+    {
+      "q": "What happens to ice in the sun?",
+      "a": "It melts.",
+      "level": "easy"
+    },
+    {
+      "q": "What pulls objects down to the ground?",
+      "a": "Gravity.",
+      "level": "easy"
+    },
+    {
+      "q": "What makes things move?",
+      "a": "Energy.",
+      "level": "easy"
+    },
+    {
+      "q": "What do plants use to make food?",
+      "a": "Sunlight.",
+      "level": "medium"
+    },
+    {
+      "q": "What is friction?",
+      "a": "It slows things down when they rub together.",
+      "level": "medium"
+    },
+    {
+      "q": "What is the water cycle?",
+      "a": "Water evaporates, forms clouds, and rains.",
+      "level": "medium"
+    },
+    {
+      "q": "What helps us breathe?",
+      "a": "The respiratory system.",
+      "level": "medium"
+    },
+    {
+      "q": "What do we call the system that pumps blood?",
+      "a": "The circulatory system.",
+      "level": "medium"
+    },
+    {
+      "q": "What type of energy is light?",
+      "a": "Light energy.",
+      "level": "medium"
+    },
+    {
+      "q": "Name one state of matter.",
+      "a": "Solid, liquid, or gas.",
+      "level": "medium"
+    },
+    {
+      "q": "How long does sunlight take to reach Earth?",
+      "a": "8 minutes.",
+      "level": "hard"
+    },
+    {
+      "q": "What are the three states of matter?",
+      "a": "Solid, liquid, gas.",
+      "level": "hard"
+    },
+    {
+      "q": "What system helps digest food?",
+      "a": "The digestive system.",
+      "level": "hard"
+    },
+    {
+      "q": "How do ecosystems work?",
+      "a": "Plants, animals, and environment work together.",
+      "level": "hard"
+    },
+    {
+      "q": "What is one way to test a hypothesis?",
+      "a": "Conduct an experiment.",
+      "level": "hard"
+    },
+    {
+      "q": "What happens to water when it heats up?",
+      "a": "It turns to steam.",
+      "level": "hard"
+    }
+  ]
+}

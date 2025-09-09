@@ -1,0 +1,114 @@
+{
+  "questions": [
+    {
+      "q": "What is a noun?",
+      "a": "A naming word.",
+      "level": "easy"
+    },
+    {
+      "q": "Give an example of a noun.",
+      "a": "Dog.",
+      "level": "easy"
+    },
+    {
+      "q": "What does a verb do?",
+      "a": "Shows action.",
+      "level": "easy"
+    },
+    {
+      "q": "Give an example of a verb.",
+      "a": "Run.",
+      "level": "easy"
+    },
+    {
+      "q": "What is an adjective?",
+      "a": "Describes a noun.",
+      "level": "easy"
+    },
+    {
+      "q": "Give an example of an adjective.",
+      "a": "Tall.",
+      "level": "easy"
+    },
+    {
+      "q": "What type of sentence tells something?",
+      "a": "Declarative.",
+      "level": "medium"
+    },
+    {
+      "q": "What type of sentence asks a question?",
+      "a": "Interrogative.",
+      "level": "medium"
+    },
+    {
+      "q": "What does an imperative sentence do?",
+      "a": "Gives a command.",
+      "level": "medium"
+    },
+    {
+      "q": "What is an exclamatory sentence?",
+      "a": "Shows strong feeling.",
+      "level": "medium"
+    },
+    {
+      "q": "Change to present tense: He went to school.",
+      "a": "He goes to school.",
+      "level": "medium"
+    },
+    {
+      "q": "Change to past tense: They eat lunch.",
+      "a": "They ate lunch.",
+      "level": "medium"
+    },
+    {
+      "q": "Change to future tense: We watch a movie.",
+      "a": "We will watch a movie.",
+      "level": "medium"
+    },
+    {
+      "q": "What is a full stop?",
+      "a": "Ends a sentence.",
+      "level": "hard"
+    },
+    {
+      "q": "What does a question mark do?",
+      "a": "Ends a question.",
+      "level": "hard"
+    },
+    {
+      "q": "What does an exclamation mark show?",
+      "a": "Strong feeling.",
+      "level": "hard"
+    },
+    {
+      "q": "How do you separate items in a list?",
+      "a": "Use a comma.",
+      "level": "hard"
+    },
+    {
+      "q": "Identify the nouns: The boy kicked the ball.",
+      "a": "Boy, ball.",
+      "level": "hard"
+    },
+    {
+      "q": "Which is a verb: run, red, happy?",
+      "a": "Run.",
+      "level": "hard"
+    },
+    {
+      "q": "Identify the type: Wow! That's amazing!",
+      "a": "Exclamatory.",
+      "level": "hard"
+    },
+    {
+      "q": "Add punctuation: Where is my book",
+      "a": "Where is my book?",
+      "level": "hard"
+    },
+    {
+      "q": "Add punctuation: I bought apples bananas and oranges",
+      "a": "I bought apples, bananas, and oranges.",
+      "level": "hard"
+    }
+  ]
+}

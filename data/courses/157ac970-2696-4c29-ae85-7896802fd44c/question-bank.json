@@ -1,0 +1,119 @@
+{
+  "questions": [
+    {
+      "q": "What is a noun?",
+      "a": "A naming word.",
+      "level": "easy"
+    },
+    {
+      "q": "Give an example of a noun.",
+      "a": "Dog.",
+      "level": "easy"
+    },
+    {
+      "q": "What does a verb do?",
+      "a": "Shows an action.",
+      "level": "easy"
+    },
+    {
+      "q": "Give an example of a verb.",
+      "a": "Run.",
+      "level": "easy"
+    },
+    {
+      "q": "What is an adjective?",
+      "a": "Describes a noun.",
+      "level": "easy"
+    },
+    {
+      "q": "Give an example of an adjective.",
+      "a": "Blue.",
+      "level": "easy"
+    },
+    {
+      "q": "What type of sentence tells something?",
+      "a": "Declarative.",
+      "level": "medium"
+    },
+    {
+      "q": "What type of sentence asks a question?",
+      "a": "Interrogative.",
+      "level": "medium"
+    },
+    {
+      "q": "Which sentence gives a command?",
+      "a": "Imperative.",
+      "level": "medium"
+    },
+    {
+      "q": "What sentence shows strong feeling?",
+      "a": "Exclamatory.",
+      "level": "medium"
+    },
+    {
+      "q": "Change 'He played football' to present tense.",
+      "a": "He plays football.",
+      "level": "medium"
+    },
+    {
+      "q": "Change 'She is reading' to past tense.",
+      "a": "She was reading.",
+      "level": "medium"
+    },
+    {
+      "q": "Change 'They eat lunch' to future tense.",
+      "a": "They will eat lunch.",
+      "level": "medium"
+    },
+    {
+      "q": "What does a full stop mean?",
+      "a": "Ends a sentence.",
+      "level": "medium"
+    },
+    {
+      "q": "What does a question mark tell us?",
+      "a": "Ends a question.",
+      "level": "medium"
+    },
+    {
+      "q": "Add punctuation: Where is my book",
+      "a": "Where is my book?",
+      "level": "hard"
+    },
+    {
+      "q": "Add punctuation: I bought apples bananas and oranges",
+      "a": "I bought apples, bananas, and oranges.",
+      "level": "hard"
+    },
+    {
+      "q": "Identify the nouns: The cat is on the roof.",
+      "a": "Cat, roof.",
+      "level": "hard"
+    },
+    {
+      "q": "What is a verb in this sentence: She dances well.",
+      "a": "Dances.",
+      "level": "hard"
+    },
+    {
+      "q": "Identify the type of this sentence: Do you like ice cream?",
+      "a": "Interrogative.",
+      "level": "hard"
+    },
+    {
+      "q": "Identify the type of this sentence: Wow! That's amazing!",
+      "a": "Exclamatory.",
+      "level": "hard"
+    },
+    {
+      "q": "Underline the adjectives: The old man walks slowly.",
+      "a": "Old.",
+      "level": "hard"
+    },
+    {
+      "q": "Give an example of a future tense sentence.",
+      "a": "I will play football.",
+      "level": "hard"
+    }
+  ]
+}

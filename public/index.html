@@ -1,0 +1,184 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>PrathamLearn</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		
+		body { 
+			font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+			background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+			min-height: 100vh;
+			padding: 20px;
+		}
+		
+		.container { 
+			max-width: 800px; 
+			margin: 0 auto;
+			padding: 40px 20px;
+		}
+		
+		.header {
+			text-align: center;
+			margin-bottom: 50px;
+		}
+		
+		.header h1 {
+			font-size: 3rem;
+			font-weight: 700;
+			color: #2c3e50;
+			margin-bottom: 10px;
+			letter-spacing: -0.02em;
+		}
+		
+		.header p {
+			font-size: 1.2rem;
+			color: #7f8c8d;
+			font-weight: 400;
+		}
+		
+		.cards-grid {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+			gap: 30px;
+			margin-top: 40px;
+		}
+		
+		.card {
+			background: white;
+			border-radius: 16px;
+			padding: 40px 30px;
+			box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+			transition: all 0.3s ease;
+			border: 1px solid rgba(255, 255, 255, 0.2);
+			position: relative;
+			overflow: hidden;
+		}
+		
+		.card::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			height: 4px;
+			background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+		}
+		
+		.card:hover {
+			transform: translateY(-5px);
+			box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+		}
+		
+		.card h3 {
+			font-size: 1.5rem;
+			font-weight: 600;
+			color: #2c3e50;
+			margin-bottom: 15px;
+		}
+		
+		.card p {
+			color: #7f8c8d;
+			margin-bottom: 25px;
+			line-height: 1.6;
+		}
+		
+		.btn {
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			padding: 12px 24px;
+			background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+			color: white;
+			text-decoration: none;
+			border-radius: 8px;
+			font-weight: 500;
+			font-size: 1rem;
+			transition: all 0.3s ease;
+			border: none;
+			cursor: pointer;
+			min-width: 140px;
+		}
+		
+		.btn:hover {
+			transform: translateY(-2px);
+			box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+		}
+		
+		.btn:active {
+			transform: translateY(0);
+		}
+		
+		.admin-card {
+			background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+		}
+		
+		.admin-card::before {
+			background: linear-gradient(90deg, #ff9a9e 0%, #fecfef 100%);
+		}
+		
+		.learner-card {
+			background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+		}
+		
+		.learner-card::before {
+			background: linear-gradient(90deg, #89f7fe 0%, #66a6ff 100%);
+		}
+		
+		.icon {
+			font-size: 2rem;
+			margin-bottom: 15px;
+			display: block;
+		}
+		
+		@media (max-width: 768px) {
+			.container {
+				padding: 20px 10px;
+			}
+			
+			.header h1 {
+				font-size: 2.5rem;
+			}
+			
+			.cards-grid {
+				grid-template-columns: 1fr;
+				gap: 20px;
+			}
+			
+			.card {
+				padding: 30px 20px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<h1>PrathamLearn</h1>
+			<p>Intelligent Learning Platform for Personalized Education</p>
+		</div>
+		
+		<div class="cards-grid">
+			<div class="card admin-card">
+				<span class="icon">👨‍💼</span>
+				<h3>Admin Portal</h3>
+				<p>Create courses, upload materials, and manage the learning content for your students.</p>
+				<a href="/admin.html" class="btn">Go to Admin</a>
+			</div>
+			
+			<div class="card learner-card">
+				<span class="icon">🎓</span>
+				<h3>Learner Portal</h3>
+				<p>Access interactive voice tutoring, assessments, and personalized study plans.</p>
+				<a href="/learner.html" class="btn">Go to Learner</a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
