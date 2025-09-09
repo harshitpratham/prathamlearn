@@ -5,3 +5,10 @@ uploads/
 npm-debug.log*
 yarn-*.log*
 pnpm-debug.log*
+.vercel
+
+# Private keys and sensitive files
+*.pem
+*.key
+*.p12
+*.pfx

@@ -10,6 +10,7 @@ const OpenAI = require('openai');
 const { GoogleGenerativeAI } = require('@google/generative-ai');
 let puppeteer; // lazy load
 const morgan = require('morgan');
+const db = require('./db');
 
 // Polyfill fetch if missing (Node < 18)
 if (typeof fetch === 'undefined') {
@@ -68,32 +69,26 @@ function writeJSON(filePath, data) {
 	fs.writeFileSync(filePath, JSON.stringify(data, null, 2), 'utf8');
 }
 
-function ensureCourse(courseId) {
-	const db = readJSON(DB_FILE);
-	if (!db.courses[courseId]) return null;
-	return db.courses[courseId];
+async function ensureCourse(courseId) {
+	const courses = await db.getCourses();
+	if (!courses[courseId]) return null;
+	return courses[courseId];
 }
 
 // Admin: create a course
-app.post('/api/admin/course', (req, res) => {
+app.post('/api/admin/course', async (req, res) => {
 	const { title, language } = req.body || {};
 	if (!title) return res.status(400).json({ error: 'title required' });
 	const courseId = uuidv4();
-	const courseDir = path.join(COURSES_DIR, courseId);
-	fs.mkdirSync(courseDir, { recursive: true });
-
-	const db = readJSON(DB_FILE);
-	db.courses[courseId] = {
+	
+	const courseData = {
 		id: courseId,
 		title,
 		language: language || 'auto',
-		materialTextPath: path.join(courseDir, 'material.txt'),
-		promptPath: path.join(courseDir, 'system-prompt.txt'),
-		questionBankPath: path.join(courseDir, 'question-bank.json'),
 		createdAt: new Date().toISOString(),
 	};
-	writeJSON(DB_FILE, db);
-
+	
+	await db.saveCourse(courseId, courseData);
 	res.json({ courseId });
 });
 
@@ -221,9 +216,9 @@ app.post('/api/admin/prompt/:courseId', async (req, res) => {
 });
 
 // List courses
-app.get('/api/courses', (req, res) => {
-	const db = readJSON(DB_FILE);
-	const list = Object.values(db.courses || {}).map(c => ({ 
+app.get('/api/courses', async (req, res) => {
+	const courses = await db.getCourses();
+	const list = Object.values(courses || {}).map(c => ({ 
 		id: c.id, 
 		title: c.title,
 		prompt: c.prompt || false,
